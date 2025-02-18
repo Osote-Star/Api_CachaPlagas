@@ -1035,23 +1035,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rodri\\.nuget\\packages\\": {},
+    "C:\\Users\\marti\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CursoBack\\Api_cachaplagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
+      "projectUniqueName": "C:\\Users\\marti\\Desktop\\Proyectos C#\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
       "projectName": "Api_cachaplagas",
-      "projectPath": "D:\\CursoBack\\Api_cachaplagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
-      "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "D:\\CursoBack\\Api_cachaplagas\\Api_cachaplagas\\obj\\",
+      "projectPath": "C:\\Users\\marti\\Desktop\\Proyectos C#\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
+      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marti\\Desktop\\Proyectos C#\\Api_CachaPlagas\\Api_cachaplagas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1113,7 +1113,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

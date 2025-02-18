@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Api_cachaplagas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fbc6f0312b3619b07cc4020b70a1af7e14186c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Api_cachaplagas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Api_cachaplagas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
