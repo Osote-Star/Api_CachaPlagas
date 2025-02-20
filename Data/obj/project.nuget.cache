@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WmW/dj/NdT8=",
+  "dgSpecHash": "l02JqXYMkjU=",
   "success": true,
   "projectFilePath": "D:\\CursoBack\\Api_cachaplagas\\Data\\Data.csproj",
   "expectedPackageFiles": [
@@ -19,12 +19,5 @@
     "C:\\Users\\rodri\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error al obtener los datos de vulnerabilidad del paquete: No se puede cargar el índice de servicio del origen https://api.nuget.org/v3/index.json."
-    }
-  ]
+  "logs": []
 }
