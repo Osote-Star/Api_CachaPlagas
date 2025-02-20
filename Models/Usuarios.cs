@@ -9,9 +9,8 @@ namespace Models
     public class Usuarios
     {
         int IDUsuario {  get; set; }
-        string Nombre { get; set; }
-        string Contrasena { get; set; }
         string Email { get; set; }
-        
+        string Contrasena { get; set; }
+        string Rol { get; set; }
     }
 }

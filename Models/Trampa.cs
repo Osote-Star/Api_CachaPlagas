@@ -12,9 +12,11 @@ namespace Models
         int IDTrampa { get; set; }
         int IDUsuario { get; set; }
         string Imagen { get; set; }
-        int Capturas { get; set; }
         string Modelo { get; set; }
+        string Nombre { get; set; }
         string Localizacion { get; set; }
+        string Estatus { get; set; }
+
 
 
     }

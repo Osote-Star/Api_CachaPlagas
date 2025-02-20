@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Services
+namespace Data.Interfaces
 {
-    public class RolServices
+    public interface IUsuarioService
     {
+        
     }
 }
