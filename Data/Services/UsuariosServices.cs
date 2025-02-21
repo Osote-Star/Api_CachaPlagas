@@ -16,7 +16,7 @@ namespace Data.Services
     {
         private IMongoDatabase? _database;
 
-        public UsuariosServices(MongoClient client) => _database = client.GetDatabase("CachaPlagas");
+        public UsuariosServices(MongoConfiguration client) => _database = client.GetClient().GetDatabase("CachaPlagas");
 
         public IMongoCollection<BsonDocument> ObtenerColeccion(string nombreColeccion)
         {

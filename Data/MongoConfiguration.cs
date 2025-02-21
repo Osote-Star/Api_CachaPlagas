@@ -10,8 +10,10 @@ namespace Data
 {
     public class MongoConfiguration
     {
-        public string _conexion;
-        public MongoConfiguration(string conexion) => _conexion = conexion;
+        private MongoClient _client;
+        public MongoConfiguration(MongoClient client) => _client = client;
+
+        public MongoClient GetClient() => _client;
         //Lo que se ocupa para hacer la conexion epicamente
     }  
 }
