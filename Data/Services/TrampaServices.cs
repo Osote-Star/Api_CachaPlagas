@@ -1,4 +1,5 @@
 ﻿using Data.Interfaces;
+using Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
@@ -23,6 +24,11 @@ namespace Data.Services
         {
             Conectar();
             return _database.GetCollection<BsonDocument>(nombreColeccion);
+        }
+
+        public Task<TrampaModel> VincularTrampa(int trampaID)
+        {
+            throw new NotImplementedException();
         }
     }
 }

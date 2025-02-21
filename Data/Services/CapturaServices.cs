@@ -15,10 +15,12 @@ namespace Data.Services
         private IMongoDatabase? _database;
 
         public CapturaServices(MongoClient client) => _client = client;
+
         public void Conectar()
         {
             _database = _client.GetDatabase("CachaPlagas");
         }
+
         public IMongoCollection<BsonDocument> ObtenerColeccion(string nombreColeccion)
         {
             Conectar();

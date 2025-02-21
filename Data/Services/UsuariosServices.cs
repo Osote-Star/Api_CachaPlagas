@@ -33,5 +33,10 @@ namespace Data.Services
             ObtenerColeccion("usuarios");
             return null;
         }
+
+        public Task<UsuariosModel> RecuperarContrasena(string Contrasena)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

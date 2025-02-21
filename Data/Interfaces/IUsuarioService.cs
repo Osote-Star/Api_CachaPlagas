@@ -9,6 +9,6 @@ namespace Data.Interfaces
 {
     public interface IUsuarioService
     {
-        //aqui iran todos los metodos de usuario
+        public Task<UsuariosModel> RecuperarContrasena(string Contrasena);
     }
 }
