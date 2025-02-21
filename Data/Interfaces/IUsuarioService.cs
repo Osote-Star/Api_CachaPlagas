@@ -9,6 +9,6 @@ namespace Data.Interfaces
 {
     public interface IUsuarioService
     {
-        public Task<UsuariosModel> RecuperarContrasena(string Contrasena);
+        public Task<TrampaModel> VincularTrampa(int trampaID);
     }
 }

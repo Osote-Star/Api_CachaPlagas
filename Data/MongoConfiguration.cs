@@ -12,11 +12,6 @@ namespace Data
     {
         public string _conexion;
         public MongoConfiguration(string conexion) => _conexion = conexion;
-
-
         //Lo que se ocupa para hacer la conexion epicamente
-
-            // El epico método genérico para obtener cualquier colección :)
-\
     }  
 }

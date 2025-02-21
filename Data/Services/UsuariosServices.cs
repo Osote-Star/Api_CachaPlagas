@@ -14,17 +14,12 @@ namespace Data.Services
 {
     public class UsuariosServices : IUsuarioService
     {
-        private MongoClient _client;
         private IMongoDatabase? _database;
 
-        public UsuariosServices(MongoClient client) => _client = client;
-        private void Conectar()
-        {
-            _database = _client.GetDatabase("CachaPlagas");
-        }
+        public UsuariosServices(MongoClient client) => _database = client.GetDatabase("CachaPlagas");
+
         public IMongoCollection<BsonDocument> ObtenerColeccion(string nombreColeccion)
         {
-            Conectar();
             return _database.GetCollection<BsonDocument>(nombreColeccion);
         }
 
@@ -34,7 +29,7 @@ namespace Data.Services
             return null;
         }
 
-        public Task<UsuariosModel> RecuperarContrasena(string Contrasena)
+        public Task<TrampaModel> VincularTrampa(int trampaID)
         {
             throw new NotImplementedException();
         }
