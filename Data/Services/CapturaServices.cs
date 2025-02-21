@@ -1,5 +1,4 @@
 ﻿using Data.Interfaces;
-using Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
@@ -8,17 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
 namespace Data.Services
 {
-    public class UsuariosServices : IUsuarioService
+    public class CapturaServices : ICapturaService
     {
         private MongoClient _client;
         private IMongoDatabase? _database;
 
-        public UsuariosServices(MongoClient client) => _client = client;
-        private void Conectar()
+        public CapturaServices(MongoClient client) => _client = client;
+        public void Conectar()
         {
             _database = _client.GetDatabase("CachaPlagas");
         }
@@ -26,12 +23,6 @@ namespace Data.Services
         {
             Conectar();
             return _database.GetCollection<BsonDocument>(nombreColeccion);
-        }
-
-        public async Task<UsuariosModel> ejemplo() 
-        {
-            ObtenerColeccion("usuarios");
-            return null;
         }
     }
 }

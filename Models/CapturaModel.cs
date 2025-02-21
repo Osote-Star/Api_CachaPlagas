@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Captura
+    public class CapturaModel
     {
         int IDCaptura { get; set; }
         int IDTrampa { get; set; }

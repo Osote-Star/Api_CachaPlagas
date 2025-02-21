@@ -1,4 +1,6 @@
 
+using Data;
+
 namespace Api_cachaplagas
 {
     public class Program
@@ -13,7 +15,8 @@ namespace Api_cachaplagas
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            MongoConfiguration mongoConfiguration = new (Environment.GetEnvironmentVariable("CONNECTION_STRING") ?? ""); 
+            builder.Services.AddSingleton(mongoConfiguration);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
