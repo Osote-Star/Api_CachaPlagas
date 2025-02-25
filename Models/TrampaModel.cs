@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -9,13 +11,23 @@ namespace Models
 {
     public class TrampaModel
     {
-        int IDTrampa { get; set; }
-        int IDUsuario { get; set; }
-        string Imagen { get; set; }
-        string Modelo { get; set; }
-        string Nombre { get; set; }
-        string Localizacion { get; set; }
-        string Estatus { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string _Id { get; set; }
+        [BsonElement("IDTrampa")]
+        public int IDTrampa { get; set; }
+        [BsonElement("IDUsuario")]
+        public int IDUsuario { get; set; }
+        [BsonElement("Imagen")]
+        public string Imagen { get; set; }
+        [BsonElement("Modelo")]
+        public string Modelo { get; set; }
+        [BsonElement("Nombre")]
+        public string Nombre { get; set; }
+        [BsonElement("Localizacion")]
+        public string Localizacion { get; set; }
+        [BsonElement("Estatus")]
+        public string Estatus { get; set; }
 
 
 

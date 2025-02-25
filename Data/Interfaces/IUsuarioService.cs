@@ -9,6 +9,5 @@ namespace Data.Interfaces
 {
     public interface IUsuarioService
     {
-        public Task<TrampaModel> VincularTrampa(int trampaID);
     }
 }

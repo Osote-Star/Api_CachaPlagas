@@ -29,9 +29,5 @@ namespace Data.Services
             return null;
         }
 
-        public Task<TrampaModel> VincularTrampa(int trampaID)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

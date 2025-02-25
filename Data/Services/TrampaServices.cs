@@ -1,12 +1,15 @@
 ﻿using Data.Interfaces;
+using DTOs.TrampaDto;
 using Models;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Data.Services
 {
@@ -20,10 +23,35 @@ namespace Data.Services
         {
             return _database.GetCollection<BsonDocument>(nombreColeccion);
         }
-        public async Task<TrampaModel> VincularTrampa(int trampaID)
+        public async Task<TrampaModel> VincularTrampa(VincularTrampaDto vincularTrampaDto)
         {
             IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
-            return null;
+
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", vincularTrampaDto.TrampaID);
+                var actualizacion = Builders<BsonDocument>.Update
+                    .Set("IDUsuario", vincularTrampaDto.UsuarioID);
+
+                var opciones = new FindOneAndUpdateOptions<BsonDocument>
+                {
+                    ReturnDocument = ReturnDocument.After // Retorna el documento actualizado
+                };
+
+                var documentoActualizado = await collection.FindOneAndUpdateAsync(filtro, actualizacion, opciones);
+
+                if (documentoActualizado != null)
+                {
+                    return BsonSerializer.Deserialize<TrampaModel>(documentoActualizado);
+                }
+
+                return null;
+
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

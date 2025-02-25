@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +10,16 @@ namespace Models
 {
     public class UsuariosModel
     {
-        int IDUsuario {  get; set; }
-        string Email { get; set; }
-        string Contrasena { get; set; }
-        string Rol { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string _Id { get; set; }
+        [BsonElement("IDUsuario")]
+        public int IDUsuario {  get; set; }
+        [BsonElement("Email")]
+        public string Email { get; set; }
+        [BsonElement("Contrasena")]
+        public string Contrasena { get; set; }
+        [BsonElement("Rol")]
+        public string Rol { get; set; }
     }
 }

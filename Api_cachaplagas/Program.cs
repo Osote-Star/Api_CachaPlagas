@@ -1,5 +1,7 @@
 
 using Data;
+using Data.Interfaces;
+using Data.Services;
 using MongoDB.Driver;
 
 namespace Api_cachaplagas
@@ -19,6 +21,7 @@ namespace Api_cachaplagas
 
             MongoConfiguration mongoConfiguration = new (new MongoClient(Environment.GetEnvironmentVariable("CONNECTION_STRING") ?? ""));
             builder.Services.AddSingleton(mongoConfiguration);
+            builder.Services.AddScoped<ITrampaServices, TrampaServices>();
 
             var app = builder.Build();
 

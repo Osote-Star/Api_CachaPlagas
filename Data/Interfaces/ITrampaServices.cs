@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using DTOs.TrampaDto;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,7 @@ namespace Data.Interfaces
 {
     public interface ITrampaServices
     {
+        public Task<TrampaModel> VincularTrampa(VincularTrampaDto vincularTrampaDto);
+
     }
 }
