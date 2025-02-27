@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Data.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using Models;
+using DTOs.TrampaDto;
+using DTOs.UsuariosDto;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,11 +12,25 @@ namespace Api_cachaplagas.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
+        private readonly IUsuarioService _usuarioService;
+
+        public UsuariosController(IUsuarioService usuarioService)
+        {
+            _usuarioService = usuarioService;
+        }
+
         // GET: api/<UsuariosController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<List<UsuarioDto>>> ObtenerUsuarios()
         {
-            return new string[] { "value1", "value2" };
+            var usuarios = await _usuarioService.ConsultarUsuarios();
+
+            if (usuarios == null || usuarios.Count == 0)
+            {
+                return NotFound("No se encontraron usuarios.");
+            }
+
+            return Ok(usuarios);
         }
 
         // GET api/<UsuariosController>/5

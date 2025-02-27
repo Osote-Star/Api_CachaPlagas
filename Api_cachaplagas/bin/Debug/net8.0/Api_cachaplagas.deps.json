@@ -154,10 +154,7 @@
           "MongoDB.Driver": "3.2.0"
         },
         "runtime": {
-          "Data.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Data.dll": {}
         }
       },
       "DTOs/1.0.0": {
@@ -165,10 +162,7 @@
           "MongoDB.Driver": "3.2.0"
         },
         "runtime": {
-          "DTOs.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DTOs.dll": {}
         }
       },
       "Models/1.0.0": {
@@ -176,10 +170,7 @@
           "MongoDB.Driver": "3.2.0"
         },
         "runtime": {
-          "Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Models.dll": {}
         }
       }
     }
