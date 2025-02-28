@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Data.Interfaces;
+using DTOs.Usuarios;
+using Microsoft.AspNetCore.Mvc;
+using Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,6 +11,12 @@ namespace Api_cachaplagas.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
+        private IUsuarioService _services;
+        public UsuariosController(IUsuarioService services)
+        {
+            _services = services;
+        }
+
         // GET: api/<UsuariosController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -24,8 +33,14 @@ namespace Api_cachaplagas.Controllers
 
         // POST api/<UsuariosController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> AgregarUsuario([FromBody] CreateUserDto createUserDto)
         {
+            UsuariosModel user = await _services.AgregarUsuario(createUserDto);
+            if(user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
         }
 
         // PUT api/<UsuariosController>/5

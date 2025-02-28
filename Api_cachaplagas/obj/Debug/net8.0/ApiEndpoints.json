@@ -361,25 +361,19 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",
-    "Method": "Post",
+    "Method": "AgregarUsuario",
     "RelativePath": "api/Usuarios",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "createUserDto",
+        "Type": "DTOs.Usuarios.CreateUserDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",

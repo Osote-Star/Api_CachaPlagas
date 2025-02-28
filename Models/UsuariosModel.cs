@@ -20,6 +20,6 @@ namespace Models
         [BsonElement("Contrasena")]
         public string Contrasena { get; set; }
         [BsonElement("Rol")]
-        public string Rol { get; set; }
+        public string Rol { get; set; } = "usuario";
     }
 }

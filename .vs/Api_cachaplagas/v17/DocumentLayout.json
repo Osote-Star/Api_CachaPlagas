@@ -1,34 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\",
+  "WorkspaceRootPath": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\rodri\\music\\api_cachaplagas\\api_cachaplagas\\data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\dtos\\trampadto\\vinculartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\trampadto\\vinculartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\models\\capturamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\capturamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\rodri\\music\\api_cachaplagas\\api_cachaplagas\\models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\rodri\\music\\api_cachaplagas\\api_cachaplagas\\api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\rodri\\music\\api_cachaplagas\\api_cachaplagas\\dtos\\usuariosdto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\usuariosdto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\rodri\\music\\api_cachaplagas\\api_cachaplagas\\api_cachaplagas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\rodri\\music\\api_cachaplagas\\api_cachaplagas\\data\\mongoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\mongoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +34,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuariosServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
-              "RelativeDocumentMoniker": "Data\\Services\\UsuariosServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
-              "RelativeToolTip": "Data\\Services\\UsuariosServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:47:50.143Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VincularTrampaDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\DTOs\\TrampaDto\\VincularTrampaDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\TrampaDto\\VincularTrampaDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\DTOs\\TrampaDto\\VincularTrampaDto.cs",
-              "RelativeToolTip": "DTOs\\TrampaDto\\VincularTrampaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:47:47.345Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1323641800:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UsuariosModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
-              "RelativeDocumentMoniker": "Models\\UsuariosModel.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
-              "RelativeToolTip": "Models\\UsuariosModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Api_cachaplagas\\Program.cs",
+              "RelativeDocumentMoniker": "Api_cachaplagas\\Program.cs",
+              "ToolTip": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Api_cachaplagas\\Program.cs",
+              "RelativeToolTip": "Api_cachaplagas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:46:04.937Z",
+              "WhenOpened": "2025-02-27T19:34:03.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MongoConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Data\\MongoConfiguration.cs",
+              "RelativeDocumentMoniker": "Data\\MongoConfiguration.cs",
+              "ToolTip": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Data\\MongoConfiguration.cs",
+              "RelativeToolTip": "Data\\MongoConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:28:51.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\DTOs\\UsuariosDto\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UsuariosDto\\CreateUserDto.cs",
+              "ToolTip": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\DTOs\\UsuariosDto\\CreateUserDto.cs",
+              "RelativeToolTip": "DTOs\\UsuariosDto\\CreateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:36:35.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosModel.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
+              "RelativeDocumentMoniker": "Models\\UsuariosModel.cs",
+              "ToolTip": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
+              "RelativeToolTip": "Models\\UsuariosModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:07:36.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosServices.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\UsuariosServices.cs",
+              "ToolTip": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
+              "RelativeToolTip": "Data\\Services\\UsuariosServices.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T15:32:58.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CapturaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\CapturaModel.cs",
-              "RelativeDocumentMoniker": "Models\\CapturaModel.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\CapturaModel.cs",
-              "RelativeToolTip": "Models\\CapturaModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAcwA0AAAAAAAAAAAAAAA==",
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:42:29.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TrampaController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:41:17.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TrampaServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
-              "RelativeDocumentMoniker": "Data\\Services\\TrampaServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
-              "RelativeToolTip": "Data\\Services\\TrampaServices.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:15:38.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TrampaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\TrampaModel.cs",
-              "RelativeDocumentMoniker": "Models\\TrampaModel.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\TrampaModel.cs",
-              "RelativeToolTip": "Models\\TrampaModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:11:42.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T03:48:51.34Z"
             }
           ]
         }

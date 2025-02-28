@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +10,10 @@ namespace DTOs.Usuarios
 {
     public class CreateUserDto
     {
-        string Email { get; set; }
-        string Contrasena { get; set; }
+        public string Email { get; set; }
+        public string Contrasena { get; set; }
+
+        //public int IDUsuario { get; set; }
 
     }
 }
