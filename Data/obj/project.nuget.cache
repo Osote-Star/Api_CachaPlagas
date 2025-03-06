@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "lUcJA/jliyw=",
+  "dgSpecHash": "+mWxAxksQNE=",
   "success": true,
   "projectFilePath": "C:\\Users\\rodri\\Music\\api_cachaplagas\\Api_CachaPlagas\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rodri\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\rodri\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.2\\microsoft.extensions.configuration.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\rodri\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.2\\microsoft.extensions.configuration.binder.9.0.2.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\rodri\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.2\\microsoft.extensions.primitives.9.0.2.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\mongodb.bson\\3.2.0\\mongodb.bson.3.2.0.nupkg.sha512",

@@ -121,7 +121,6 @@ C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\n
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.AssemblyInfoInputs.cache
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.AssemblyInfo.cs
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.csproj.CoreCompileInputs.cache
-C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.sourcelink.json
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\scopedcss\bundle\Api_cachaplagas.styles.css
@@ -141,3 +140,7 @@ C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\n
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.pdb
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.genruntimeconfig.cache
 C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\ref\Api_cachaplagas.dll
+C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\rodri\Music\api_cachaplagas\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.MvcApplicationPartsAssemblyInfo.cs

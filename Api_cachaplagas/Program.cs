@@ -11,6 +11,8 @@ namespace Api_cachaplagas
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            //var configuration = builder.Configuration;
+            //builder.Services.AddSingleton<IConfiguration>(configuration);
 
             // Add services to the container.
 
@@ -23,6 +25,7 @@ namespace Api_cachaplagas
             builder.Services.AddSingleton(mongoConfiguration);
             builder.Services.AddScoped<ITrampaServices, TrampaServices>();
             builder.Services.AddScoped<IUsuarioService,UsuariosServices>();
+            builder.Services.AddTransient<IEmailService, EmailService>();
 
             var app = builder.Build();
 
