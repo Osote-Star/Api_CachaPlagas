@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using DTOs.UsuariosDto;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace Data.Interfaces
 {
     public interface IUsuarioService
     {
+        public Task<UsuariosModel> RecuperarContrasena(RecuperarContrasenaDto recuperarContrasenaDto);
     }
 }

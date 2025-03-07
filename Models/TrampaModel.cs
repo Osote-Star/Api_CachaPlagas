@@ -22,14 +22,15 @@ namespace Models
         public string Imagen { get; set; }
         [BsonElement("Modelo")]
         public string Modelo { get; set; }
-        [BsonElement("Nombre")]
-        public string Nombre { get; set; }
         [BsonElement("Localizacion")]
         public string Localizacion { get; set; }
-        [BsonElement("Estatus")]
-        public string Estatus { get; set; }
-
-
+        [BsonElement("EstatusTrampa")]
+        public bool EstatusTrampa { get; set; }
+        [BsonElement("EstatusSensor")]
+        public bool EstatusSensor { get; set; }
+        [BsonElement("EstatusPuerta")]
+        public bool EstatusPuerta { get; set; }
+        public List<CapturaModel> Capturas { get; set; } = [];
 
     }
 }

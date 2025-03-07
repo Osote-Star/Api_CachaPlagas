@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Data.Interfaces;
+using DTOs.UsuariosDto;
+using Microsoft.AspNetCore.Mvc;
+using Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,6 +11,9 @@ namespace Api_cachaplagas.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
+        private IUsuarioService _services;
+        public UsuariosController(IUsuarioService services) => _services = services;
+
         // GET: api/<UsuariosController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -29,9 +35,13 @@ namespace Api_cachaplagas.Controllers
         }
 
         // PUT api/<UsuariosController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("RecuperarContrasena")]
+        public async Task<IActionResult> Put([FromBody] RecuperarContrasenaDto recuperarContrasenaDto)
         {
+            UsuariosModel task = await _services.RecuperarContrasena(recuperarContrasenaDto);
+            if (task == null) return NotFound();
+            return Ok(task);
+
         }
 
         // DELETE api/<UsuariosController>/5

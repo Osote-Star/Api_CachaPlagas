@@ -23,10 +23,12 @@ namespace Api_cachaplagas.Controllers
         }
 
         // GET api/<TrampaController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("MostrarEstadistica")]
+        public async Task<IActionResult> Get(int TrampaID)
         {
-            return "value";
+            TrampaModel task = await _services.MostrarEstadistica(TrampaID);
+            if (task == null) return NotFound();
+            return Ok(task);
         }
 
         // POST api/<TrampaController>
@@ -36,7 +38,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // PUT api/<TrampaController>/5
-        [HttpPut]
+        [HttpPut("AnadirTrampa")]
         public async Task<IActionResult> Put([FromBody] VincularTrampaDto vincularTrampaDto)
         {
             TrampaModel trampa = await _services.VincularTrampa(vincularTrampaDto);

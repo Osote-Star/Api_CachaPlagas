@@ -1,6 +1,9 @@
 ﻿using Data.Interfaces;
+using DTOs.TrampaDto;
+using DTOs.UsuariosDto;
 using Models;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -22,12 +25,35 @@ namespace Data.Services
         {
             return _database.GetCollection<BsonDocument>(nombreColeccion);
         }
-
-        public async Task<UsuariosModel> ejemplo() 
+        public async Task<UsuariosModel> RecuperarContrasena(RecuperarContrasenaDto recuperarContrasenaDto)
         {
-            ObtenerColeccion("usuarios");
-            return null;
-        }
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Usuario");
 
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDUsuario", recuperarContrasenaDto.IDUsuario);
+                var actualizacion = Builders<BsonDocument>.Update
+                    .Set("Contrasena", recuperarContrasenaDto.Contrasena);
+
+                var nuevoDocumento = new FindOneAndUpdateOptions<BsonDocument>
+                {
+                    ReturnDocument = ReturnDocument.After // Retorna el documento actualizado
+                };
+
+                var documentoActualizado = await collection.FindOneAndUpdateAsync(filtro, actualizacion, nuevoDocumento);
+
+                if (documentoActualizado != null)
+                {
+                    return BsonSerializer.Deserialize<UsuariosModel>(documentoActualizado);
+                }
+
+                return null;
+
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

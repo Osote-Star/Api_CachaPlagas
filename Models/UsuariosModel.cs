@@ -21,5 +21,6 @@ namespace Models
         public string Contrasena { get; set; }
         [BsonElement("Rol")]
         public string Rol { get; set; }
+        public List<TrampaModel> Trampas { get; set; } = [];
     }
 }
