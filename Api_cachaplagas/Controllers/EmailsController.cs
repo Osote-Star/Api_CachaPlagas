@@ -31,7 +31,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // POST api/<EmailsController>
-        [HttpPost]
+        [HttpPost("EnviarCorreo")]
         public async Task<IActionResult> Enviar(string email, string tema, string cuerpo)
         {
             await servicioEmail.EnviarEmail(email, tema, cuerpo);

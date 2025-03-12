@@ -32,7 +32,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // POST api/<UsuariosController>
-        [HttpPost]
+        [HttpPost("AgregarUsuario")]
         public async Task<IActionResult> AgregarUsuario([FromBody] CreateUserDto createUserDto)
         {
             UsuariosModel user = await _services.AgregarUsuario(createUserDto);
