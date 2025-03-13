@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {}
+    "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {
+    "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\CD03\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\obj\\",
+        "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
+        "outputPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Alvaro\\Visual Studio-Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CD03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

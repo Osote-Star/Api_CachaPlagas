@@ -10,6 +10,6 @@ namespace Data.Interfaces
 {
     public interface IUsuarioService
     {
-        Task<List<UsuarioDto>> ConsultarUsuarios();
+        Task<IEnumerable<UsuarioDto>> ConsultarUsuario();
     }
 }

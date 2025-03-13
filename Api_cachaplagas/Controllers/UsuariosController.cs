@@ -21,15 +21,9 @@ namespace Api_cachaplagas.Controllers
 
         // GET: api/<UsuariosController>
         [HttpGet]
-        public async Task<ActionResult<List<UsuarioDto>>> ObtenerUsuarios()
+        public async Task<ActionResult<IEnumerable<UsuarioDto>>> ObtenerUsuarios()
         {
-            var usuarios = await _usuarioService.ConsultarUsuarios();
-
-            if (usuarios == null || usuarios.Count == 0)
-            {
-                return NotFound("No se encontraron usuarios.");
-            }
-
+            var usuarios = await _usuarioService.ConsultarUsuario();
             return Ok(usuarios);
         }
 

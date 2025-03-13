@@ -1,5 +1,6 @@
 ﻿using Data.Interfaces;
 using DTOs.TrampaDto;
+using DTOs.UsuariosDto;
 using Models;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
@@ -18,6 +19,7 @@ namespace Data.Services
         private IMongoDatabase? _database;
 
         public TrampaServices(MongoConfiguration client) => _database = client.GetClient().GetDatabase("CachaPlagas");
+
 
         public IMongoCollection<BsonDocument> ObtenerColeccion(string nombreColeccion)
         {
@@ -52,6 +54,35 @@ namespace Data.Services
             {
                 return null;
             }
+        }
+
+        public async Task<TrampaModel> AgregarTrampa(AgregarTrampaDto agregartrampa)
+        {
+
+            var documento = new BsonDocument
+            {
+                { "IDTrampa", agregartrampa.IDTrampa },
+                { "IDUsuario", BsonNull.Value },
+                { "Imagen", agregartrampa.Imagen },
+                { "Modelo", agregartrampa.Modelo },
+                { "Localizacion", BsonNull.Value },
+                { "Estatus", agregartrampa.EstatusTrampa },
+                { "Estatus", agregartrampa.EstatusPuerta },
+                { "Estatus", agregartrampa.EstatusSensor }
+
+            };
+
+            await ObtenerColeccion("Trampa").InsertOneAsync(documento);
+
+            return new TrampaModel
+            {
+                IDTrampa = documento.GetValue("IDTrampa").ToInt32(),
+                Imagen = documento.GetValue("Imagen").ToString(),
+                Modelo = documento.GetValue("Modelo").ToString(),
+                EstatusTrampa = documento.GetValue("EstatusTrampa").ToString(),
+                EstatusPuerta = documento.GetValue("EstatusPuerta").ToString(),
+                EstatusSensor = documento.GetValue("EstatusSensor").ToString(),
+            };
         }
     }
 }

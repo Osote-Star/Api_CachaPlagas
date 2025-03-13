@@ -1,74 +1,94 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\",
+  "WorkspaceRootPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\data\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\data\\services\\capturaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\capturaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|d:\\alvaro\\documents\\api_cachaplagas\\api_cachaplagas\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\mongoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\mongoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\dtos\\trampadto\\vinculartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\trampadto\\vinculartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|d:\\alvaro\\documents\\api_cachaplagas\\dtos\\trampadto\\agregartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\trampadto\\agregartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|d:\\alvaro\\documents\\api_cachaplagas\\models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\api_cachaplagas\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\dtos\\usuariosdto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\usuariosdto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|d:\\alvaro\\documents\\api_cachaplagas\\models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\dtos\\usuariosdto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\usuariosdto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\api_cachaplagas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\data\\interfaces\\icapturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\icapturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\models\\capturamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|d:\\alvaro\\documents\\api_cachaplagas\\models\\capturamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\capturamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\cd03\\documents\\api_cachaplagas\\models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|d:\\alvaro\\documents\\api_cachaplagas\\dtos\\trampadto\\vinculartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\trampadto\\vinculartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\services\\capturaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\capturaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|d:\\alvaro\\documents\\api_cachaplagas\\dtos\\usuariosdto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\usuariosdto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\interfaces\\icapturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\icapturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|d:\\alvaro\\documents\\api_cachaplagas\\dtos\\usuariosdto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\usuariosdto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|d:\\alvaro\\documents\\api_cachaplagas\\api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|d:\\alvaro\\documents\\api_cachaplagas\\api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|d:\\alvaro\\documents\\api_cachaplagas\\api_cachaplagas\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|d:\\alvaro\\documents\\api_cachaplagas\\api_cachaplagas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|d:\\alvaro\\documents\\api_cachaplagas\\api_cachaplagas\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\interfaces\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|d:\\alvaro\\documents\\api_cachaplagas\\data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,242 +98,290 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Api_cachaplagas\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Api_cachaplagas\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-13T04:41:36.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Api_cachaplagas\\WeatherForecast.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\WeatherForecast.cs",
+              "RelativeToolTip": "Api_cachaplagas\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:10:46.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MongoConfiguration.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\MongoConfiguration.cs",
+              "RelativeDocumentMoniker": "Data\\MongoConfiguration.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\MongoConfiguration.cs",
+              "RelativeToolTip": "Data\\MongoConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:03:35.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AgregarTrampaDto.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\TrampaDto\\AgregarTrampaDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\TrampaDto\\AgregarTrampaDto.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\TrampaDto\\AgregarTrampaDto.cs",
+              "RelativeToolTip": "DTOs\\TrampaDto\\AgregarTrampaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T20:01:02.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IAuthServices.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\IAuthServices.cs",
+              "RelativeDocumentMoniker": "Data\\Interfaces\\IAuthServices.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\IAuthServices.cs",
+              "RelativeToolTip": "Data\\Interfaces\\IAuthServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T19:11:52.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "AuthServices.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
               "RelativeDocumentMoniker": "Data\\Services\\AuthServices.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
               "RelativeToolTip": "Data\\Services\\AuthServices.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T21:45:13.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T21:45:13.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Api_cachaplagas\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T21:21:33.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T21:21:33.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAJAAAA",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T18:57:01.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T18:57:01.954Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "UsuarioDto.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\UsuariosDto\\UsuarioDto.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\UsuariosDto\\UsuarioDto.cs",
               "RelativeDocumentMoniker": "DTOs\\UsuariosDto\\UsuarioDto.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\UsuariosDto\\UsuarioDto.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\UsuariosDto\\UsuarioDto.cs",
               "RelativeToolTip": "DTOs\\UsuariosDto\\UsuarioDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T18:23:32.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "CreateUserDto.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\UsuariosDto\\CreateUserDto.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\UsuariosDto\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "DTOs\\UsuariosDto\\CreateUserDto.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\UsuariosDto\\CreateUserDto.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\UsuariosDto\\CreateUserDto.cs",
               "RelativeToolTip": "DTOs\\UsuariosDto\\CreateUserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T18:00:19.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "IUsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\IUsuarioService.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\IUsuarioService.cs",
               "RelativeDocumentMoniker": "Data\\Interfaces\\IUsuarioService.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\IUsuarioService.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\IUsuarioService.cs",
               "RelativeToolTip": "Data\\Interfaces\\IUsuarioService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T17:52:05.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T17:52:05.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "UsuariosServices.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
               "RelativeDocumentMoniker": "Data\\Services\\UsuariosServices.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
               "RelativeToolTip": "Data\\Services\\UsuariosServices.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA1wBkAAAAAAAAA",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwB8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T19:47:50.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "VincularTrampaDto.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\TrampaDto\\VincularTrampaDto.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\TrampaDto\\VincularTrampaDto.cs",
               "RelativeDocumentMoniker": "DTOs\\TrampaDto\\VincularTrampaDto.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\TrampaDto\\VincularTrampaDto.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\TrampaDto\\VincularTrampaDto.cs",
               "RelativeToolTip": "DTOs\\TrampaDto\\VincularTrampaDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T19:47:47.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "UsuariosModel.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
               "RelativeDocumentMoniker": "Models\\UsuariosModel.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
               "RelativeToolTip": "Models\\UsuariosModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAASAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T19:46:04.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TrampaServices.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
               "RelativeDocumentMoniker": "Data\\Services\\TrampaServices.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
               "RelativeToolTip": "Data\\Services\\TrampaServices.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA1wB4AAAANAAAA",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T19:15:38.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "ITrampaServices.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
               "RelativeDocumentMoniker": "Data\\Interfaces\\ITrampaServices.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
               "RelativeToolTip": "Data\\Interfaces\\ITrampaServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T18:00:47.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Program.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Program.cs",
               "RelativeDocumentMoniker": "Api_cachaplagas\\Program.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Program.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Program.cs",
               "RelativeToolTip": "Api_cachaplagas\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAzAAAA",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T19:54:49.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T19:54:49.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "CapturaServices.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Services\\CapturaServices.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Services\\CapturaServices.cs",
               "RelativeDocumentMoniker": "Data\\Services\\CapturaServices.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Services\\CapturaServices.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Services\\CapturaServices.cs",
               "RelativeToolTip": "Data\\Services\\CapturaServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T18:22:14.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TrampaController.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
               "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
               "RelativeToolTip": "Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAABUAAAAAAAAAAAAjwCYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T19:41:17.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "ICapturaService.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\ICapturaService.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\ICapturaService.cs",
               "RelativeDocumentMoniker": "Data\\Interfaces\\ICapturaService.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\ICapturaService.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Interfaces\\ICapturaService.cs",
               "RelativeToolTip": "Data\\Interfaces\\ICapturaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T18:00:46.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "CapturaModel.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\CapturaModel.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\CapturaModel.cs",
               "RelativeDocumentMoniker": "Models\\CapturaModel.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\CapturaModel.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\CapturaModel.cs",
               "RelativeToolTip": "Models\\CapturaModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAcwA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:42:29.275Z"
+              "WhenOpened": "2025-02-25T19:42:29.275Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 4,
               "Title": "TrampaModel.cs",
-              "DocumentMoniker": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\TrampaModel.cs",
+              "DocumentMoniker": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\TrampaModel.cs",
               "RelativeDocumentMoniker": "Models\\TrampaModel.cs",
-              "ToolTip": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\TrampaModel.cs",
+              "ToolTip": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\TrampaModel.cs",
               "RelativeToolTip": "Models\\TrampaModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T19:11:42.726Z"
+              "WhenOpened": "2025-02-25T19:11:42.726Z",
+              "EditorCaption": ""
             }
           ]
         }

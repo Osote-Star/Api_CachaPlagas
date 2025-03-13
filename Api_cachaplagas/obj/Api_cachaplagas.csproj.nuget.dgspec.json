@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj": {}
+    "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj": {
+    "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
+        "projectUniqueName": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
         "projectName": "Api_cachaplagas",
-        "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
-        "packagesPath": "C:\\Users\\CD03\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\obj\\",
+        "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
+        "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
+        "outputPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Api_cachaplagas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Alvaro\\Visual Studio-Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CD03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,14 +33,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Data.csproj"
+              "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Data.csproj": {
+                "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Data.csproj"
               },
-              "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj"
+              "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
+                "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj"
+              "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {
+                "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj"
               }
             }
           }
@@ -88,24 +88,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Data.csproj": {
+    "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Data.csproj",
+        "projectUniqueName": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\CD03\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Data\\obj\\",
+        "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
+        "outputPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Alvaro\\Visual Studio-Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CD03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -121,11 +121,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj"
+              "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
+                "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj"
+              "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {
+                "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj"
               }
             }
           }
@@ -166,24 +166,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
+    "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj",
-        "packagesPath": "C:\\Users\\CD03\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\DTOs\\obj\\",
+        "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\DTOs.csproj",
+        "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
+        "outputPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Alvaro\\Visual Studio-Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CD03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -237,24 +237,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {
+    "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\CD03\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CD03\\Documents\\Api_CachaPlagas\\Models\\obj\\",
+        "projectPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
+        "outputPath": "D:\\Alvaro\\Documents\\Api_CachaPlagas\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Alvaro\\Visual Studio-Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CD03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -308,7 +308,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

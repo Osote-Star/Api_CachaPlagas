@@ -19,50 +19,23 @@ namespace Data.Services
 
         public UsuariosServices(MongoConfiguration client) => _database = client.GetClient().GetDatabase("CachaPlagas");
 
-        public IMongoCollection<BsonDocument> ObtenerColeccion(string nombreColeccion)
+        public IMongoCollection<BsonDocument> ObtenerColeccion()
         {
-            return _database.GetCollection<BsonDocument>(nombreColeccion);
+            return _database.GetCollection<BsonDocument>("Usuario");
         }
 
-        public async Task<List<UsuarioDto>> ConsultarUsuarios()
+        public async Task<IEnumerable<UsuarioDto>> ConsultarUsuario()
         {
-            var coleccion = ObtenerColeccion("usuarios");
+            var filtro = Builders<BsonDocument>.Filter.Empty;
+            var documentos = await ObtenerColeccion().Find(filtro).ToListAsync();
 
-            if (coleccion == null)
+            return documentos.Select(doc => new UsuarioDto
             {
-                Console.WriteLine("No se pudo obtener la colección 'usuarios'.");
-                return new List<UsuarioDto>();
-            }
-
-            Console.WriteLine("Realizando la consulta a la colección...");
-
-            // Consultar todos los documentos
-            var documentos = await coleccion.Find(new BsonDocument()).ToListAsync();
-
-            Console.WriteLine($"Documentos encontrados: {documentos.Count}");
-
-            if (documentos.Count == 0)
-            {
-                Console.WriteLine("No se encontraron usuarios en la colección.");
-                return new List<UsuarioDto>();
-            }
-
-            // Mapear los documentos al DTO
-            var usuariosDto = documentos.ConvertAll(doc => new UsuarioDto
-            {
-                IDUsuario = doc.Contains("IDUsuario") ? doc["IDUsuario"].ToInt32() : 0,
-                Email = doc.Contains("Email") ? doc["Email"].AsString : "Sin Email",
-                Rol = doc.Contains("Rol") ? doc["Rol"].AsString : "Sin Rol"
+                IDUsuario = doc.GetValue("IDUsuario").AsInt32,
+                Email = doc.GetValue("Email").AsString,
+                Rol = doc.GetValue("Rol").AsString
             });
-
-            // Mostrar los resultados en consola (opcional)
-            usuariosDto.ForEach(u => Console.WriteLine($"ID: {u.IDUsuario}, Email: {u.Email}, Rol: {u.Rol}"));
-
-            return usuariosDto;
         }
-
-
-
 
     }
 }

@@ -17,7 +17,7 @@ namespace Models
         [BsonElement("IDTrampa")]
         public int IDTrampa { get; set; }
         [BsonElement("IDUsuario")]
-        public int IDUsuario { get; set; }
+        public int? IDUsuario { get; set; }
         [BsonElement("Imagen")]
         public string Imagen { get; set; }
         [BsonElement("Modelo")]
@@ -26,9 +26,12 @@ namespace Models
         public string Nombre { get; set; }
         [BsonElement("Localizacion")]
         public string Localizacion { get; set; }
-        [BsonElement("Estatus")]
-        public string Estatus { get; set; }
-
+        [BsonElement("EstatusTrampa")]
+        public string EstatusTrampa { get; set; }
+        [BsonElement("EstatusPuerta")]
+        public string EstatusPuerta { get; set; }
+        [BsonElement("EstatusSensor")]
+        public string EstatusSensor { get; set; }
 
 
     }

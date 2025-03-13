@@ -255,22 +255,26 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
-    "Method": "Post",
+    "Method": "AgregarTrampa",
     "RelativePath": "api/Trampa",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "agregarTrampa",
+        "Type": "DTOs.TrampaDto.AgregarTrampaDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Models.TrampaModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
@@ -341,7 +345,7 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",
-    "Method": "Get",
+    "Method": "ObtenerUsuarios",
     "RelativePath": "api/Usuarios",
     "HttpMethod": "GET",
     "IsController": true,
@@ -349,7 +353,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[DTOs.UsuariosDto.UsuarioDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

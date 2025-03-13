@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DTOs
-build_property.ProjectDir = C:\Users\CD03\Documents\Api_CachaPlagas\DTOs\
+build_property.ProjectDir = D:\Alvaro\Documents\Api_CachaPlagas\DTOs\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

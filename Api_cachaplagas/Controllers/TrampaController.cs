@@ -1,5 +1,6 @@
 ﻿using Data.Interfaces;
 using DTOs.TrampaDto;
+using DTOs.UsuariosDto;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -31,8 +32,10 @@ namespace Api_cachaplagas.Controllers
 
         // POST api/<TrampaController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<TrampaModel>> AgregarTrampa([FromBody] AgregarTrampaDto agregarTrampa)
         {
+            var trampaCreada = await _services.AgregarTrampa(agregarTrampa);
+            return Created("/api/Trampa/" + trampaCreada.IDTrampa, trampaCreada);
         }
 
         // PUT api/<TrampaController>/5

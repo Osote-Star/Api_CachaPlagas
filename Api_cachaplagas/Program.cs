@@ -22,6 +22,7 @@ namespace Api_cachaplagas
             MongoConfiguration mongoConfiguration = new (new MongoClient(Environment.GetEnvironmentVariable("CONNECTION_STRING") ?? ""));
             builder.Services.AddSingleton(mongoConfiguration);
             builder.Services.AddScoped<ITrampaServices, TrampaServices>();
+
             builder.Services.AddScoped<IUsuarioService, UsuariosServices>();
 
             var app = builder.Build();
