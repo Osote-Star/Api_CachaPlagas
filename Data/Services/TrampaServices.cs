@@ -90,5 +90,56 @@ namespace Data.Services
                 return null;
             }
         }
+
+        #region FindAll
+
+        public async Task<List<TrampaModel>> TodasTrampas(int usuarioID)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDUsuario", usuarioID);
+                var documentos = await collection.Find(filtro).ToListAsync();
+                if (documentos != null && documentos.Count > 0)
+                {
+                    List<TrampaModel> trampas = new List<TrampaModel>();
+                    foreach (var documento in documentos)
+                    {
+                        trampas.Add(BsonSerializer.Deserialize<TrampaModel>(documento));
+                    }
+                    return trampas;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        #endregion
+
+        #region FindOne
+
+        public async Task<TrampaModel> BuscarTrampa(int trampaID)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", trampaID);
+                var documento = await collection.Find(filtro).FirstOrDefaultAsync();
+                if (documento != null)
+                {
+                    return BsonSerializer.Deserialize<TrampaModel>(documento);
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        #endregion
     }
 }

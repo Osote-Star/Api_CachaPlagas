@@ -23,6 +23,7 @@ namespace Api_cachaplagas
             builder.Services.AddSingleton(mongoConfiguration);
             builder.Services.AddScoped<ITrampaServices, TrampaServices>();
             builder.Services.AddScoped<IUsuarioService, UsuariosServices>();
+            builder.Services.AddScoped<IAuthServices, AuthServices>();
 
             var app = builder.Build();
 

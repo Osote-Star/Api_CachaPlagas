@@ -13,5 +13,10 @@ namespace Data.Interfaces
         public Task<TrampaModel> VincularTrampa(VincularTrampaDto vincularTrampaDto);
         public Task<TrampaModel> MostrarEstadistica(int TrampaId);
 
+        public Task<List<TrampaModel>> TodasTrampas(int usuarioID);
+
+        public Task<TrampaModel> BuscarTrampa(int trampaID);
+
+
     }
 }

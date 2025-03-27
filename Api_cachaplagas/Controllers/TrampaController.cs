@@ -12,14 +12,31 @@ namespace Api_cachaplagas.Controllers
     public class TrampaController : ControllerBase
     {
         private ITrampaServices _services;
-        public TrampaController(ITrampaServices services) => _services = services;  
+        public TrampaController(ITrampaServices services) => _services = services;
 
 
         // GET: api/<TrampaController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("Buscar-las-trampas-del-usuario/{usuarioID}")]
+        public async Task<ActionResult<List<TrampaModel>>> GetTodasTrampas(int usuarioID)
         {
-            return new string[] { "value1", "value2" };
+            var trampas = await _services.TodasTrampas(usuarioID);
+            if (trampas == null || trampas.Count == 0)
+            {
+                return NotFound("No se encontraron trampas para el usuario especificado.");
+            }
+            return Ok(trampas);
+        }
+
+        // GET api/<TrampaController>/5
+        [HttpGet("Buscar-trampa/{trampaID}")]
+        public async Task<ActionResult<TrampaModel>> GetTrampas(int trampaID)
+        {
+            var trampa = await _services.BuscarTrampa(trampaID);
+            if (trampa == null)
+            {
+                return NotFound("No se encontró la trampa especificada.");
+            }
+            return Ok(trampa);
         }
 
         // GET api/<TrampaController>/5
