@@ -27,11 +27,11 @@ namespace Models
         [BsonElement("Localizacion")]
         public string Localizacion { get; set; }
         [BsonElement("EstatusTrampa")]
-        public string EstatusTrampa { get; set; }
+        public bool EstatusTrampa { get; set; } = false;
         [BsonElement("EstatusPuerta")]
-        public string EstatusPuerta { get; set; }
+        public bool EstatusPuerta { get; set; } = false;
         [BsonElement("EstatusSensor")]
-        public string EstatusSensor { get; set; }
+        public bool EstatusSensor { get; set; } = false;
 
 
     }
