@@ -1,6 +1,7 @@
 ﻿using Data.Interfaces;
 using Models;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -24,5 +25,28 @@ namespace Data.Services
         {
             throw new NotImplementedException();
         }
+
+        #region Login
+
+        public async Task<UsuariosModel> Login(string Email, string Contrasena)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Usuario");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("Email", Email) & Builders<BsonDocument>.Filter.Eq("Contrasena", Contrasena);
+                var documento = await collection.Find(filtro).FirstOrDefaultAsync();
+                if (documento != null)
+                {
+                    return BsonSerializer.Deserialize<UsuariosModel>(documento);
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        #endregion
     }
 }

@@ -10,8 +10,4 @@
     <PackageReference Include="MongoDB.Driver" Version="3.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="CapturaDto\" />
-  </ItemGroup>
-
 </Project>

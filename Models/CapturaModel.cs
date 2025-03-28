@@ -19,7 +19,7 @@ namespace Models
         [BsonElement("IDTrampa")] 
         public int IDTrampa { get; set; }
         [BsonElement("Animal")]
-        public string Animal { get; set; }
+        public string Animal { get; set; } = "desconocido";
         [BsonElement("FechaCaptura")]
         public DateTime FechaCaptura { get; set; }
     }

@@ -10,5 +10,7 @@ namespace Data.Interfaces
     public interface IAuthServices
     {
         public Task<UsuariosModel> RecuperarContrasena(string Contrasena);
+
+        public Task<UsuariosModel> Login(string Email, string Contrasena);
     }
 }

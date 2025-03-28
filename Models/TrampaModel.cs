@@ -15,7 +15,7 @@ namespace Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string _Id { get; set; }
         [BsonElement("IDTrampa")]
-        public int IDTrampa { get; set; }
+        public int? IDTrampa { get; set; }
         [BsonElement("IDUsuario")]
         public int IDUsuario { get; set; }
         [BsonElement("Imagen")]
@@ -23,7 +23,7 @@ namespace Models
         [BsonElement("Modelo")]
         public string Modelo { get; set; }
         [BsonElement("Localizacion")]
-        public string Localizacion { get; set; }
+        public string? Localizacion { get; set; }
         [BsonElement("EstatusTrampa")]
         public bool EstatusTrampa { get; set; }
         [BsonElement("EstatusSensor")]

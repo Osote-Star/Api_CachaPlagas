@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Data.Interfaces;
+using DTOs.UsuariosDto;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,28 @@ namespace Api_cachaplagas.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        // GET: api/<AuthController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        private IAuthServices _services;
+        public AuthController(IAuthServices services) => _services = services;
 
-        // GET api/<AuthController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
         // POST api/<AuthController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("Login")]
+        public async Task<IActionResult> Post([FromBody] LoginDto loginDto)
         {
+            if (loginDto == null || string.IsNullOrEmpty(loginDto.Email) || string.IsNullOrEmpty(loginDto.Contrasena))
+            {
+                return BadRequest("Por favor, proporciona un email y una contraseña válidos.");
+            }
+
+            var usuario = await _services.Login(loginDto.Email, loginDto.Contrasena);
+
+            if (usuario == null)
+            {
+                return NotFound("Usuario no encontrado o credenciales incorrectas.");
+            }
+
+            return Ok(usuario);
         }
 
-        // PUT api/<AuthController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<AuthController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

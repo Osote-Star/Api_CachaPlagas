@@ -1,4 +1,5 @@
 ﻿using Data.Interfaces;
+using DTOs.Usuarios;
 using DTOs.UsuariosDto;
 using Microsoft.AspNetCore.Mvc;
 using Models;
@@ -15,10 +16,11 @@ namespace Api_cachaplagas.Controllers
         public UsuariosController(IUsuarioService services) => _services = services;
 
         // GET: api/<UsuariosController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("ObtenerUsuarios")]
+        public async Task<ActionResult<IEnumerable<UsuarioDto>>> ObtenerUsuarios()
         {
-            return new string[] { "value1", "value2" };
+            var usuarios = await _services.ConsultarUsuario();
+            return Ok(usuarios);
         }
 
         // GET api/<UsuariosController>/5
@@ -29,9 +31,15 @@ namespace Api_cachaplagas.Controllers
         }
 
         // POST api/<UsuariosController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("AgregarUsuario")]
+        public async Task<IActionResult> AgregarUsuario([FromBody] CreateUserDto createUserDto)
         {
+            UsuariosModel user = await _services.AgregarUsuario(createUserDto);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
         }
 
         // PUT api/<UsuariosController>/5

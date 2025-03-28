@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Data.Interfaces;
+using DTOs.CapturaDto;
+using DTOs.Usuarios;
+using Microsoft.AspNetCore.Mvc;
+using Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +12,22 @@ namespace Api_cachaplagas.Controllers
     [ApiController]
     public class CapturaController : ControllerBase
     {
-        // GET: api/<CapturaController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        private ICapturaService _services;
+        public CapturaController(ICapturaService services) => _services = services;
 
-        // GET api/<CapturaController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
         // POST api/<CapturaController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("AgregarCaptura")]
+        public async Task<IActionResult> AgregarCaptura([FromBody] AgregarCapturaDto agregarCapturaDto)
         {
+            CapturaModel captura = await _services.AgregarCaptura(agregarCapturaDto);
+            if (captura == null)
+            {
+                return NotFound();
+            }
+            return Ok(captura);
         }
 
-        // PUT api/<CapturaController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<CapturaController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

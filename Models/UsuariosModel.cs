@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Models
 {
@@ -20,7 +21,7 @@ namespace Models
         [BsonElement("Contrasena")]
         public string Contrasena { get; set; }
         [BsonElement("Rol")]
-        public string Rol { get; set; }
+        public string Rol { get; set; } = "usuario";
         public List<TrampaModel> Trampas { get; set; } = [];
     }
 }
