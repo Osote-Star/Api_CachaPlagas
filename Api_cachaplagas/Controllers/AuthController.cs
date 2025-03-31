@@ -16,22 +16,14 @@ namespace Api_cachaplagas.Controllers
 
         // POST api/<AuthController>
         [HttpPost("Login")]
-        public async Task<IActionResult> Post([FromBody] LoginDto loginDto)
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
-            if (loginDto == null || string.IsNullOrEmpty(loginDto.Email) || string.IsNullOrEmpty(loginDto.Contrasena))
-            {
-                return BadRequest("Por favor, proporciona un email y una contraseña válidos.");
-            }
+            var token = await _services.Login(loginDto);
+            if (token == "") return Unauthorized();
+            return Ok(token);
 
-            var usuario = await _services.Login(loginDto.Email, loginDto.Contrasena);
-
-            if (usuario == null)
-            {
-                return NotFound("Usuario no encontrado o credenciales incorrectas.");
-            }
-
-            return Ok(usuario);
         }
+
 
     }
 }

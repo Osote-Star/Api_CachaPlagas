@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BC = BCrypt.Net.BCrypt;
 
 
 
@@ -33,7 +34,7 @@ namespace Data.Services
             return _database.GetCollection<UsuariosModel>(nombreColeccion);
         }
 
-        public async Task<UsuariosModel> RecuperarContrasena(RecuperarContrasenaDto recuperarContrasenaDto)
+        public async Task<UsuariosModel> CambiarContrasena(CambiarContrasenaDto recuperarContrasenaDto)
         {
             IMongoCollection<BsonDocument> collection = ObtenerColeccion("Usuario");
 
@@ -85,12 +86,12 @@ namespace Data.Services
         }
 
 
-        public async Task<UsuariosModel> AgregarUsuario(CreateUserDto createUserDto)
+        public async Task<UsuariosModel?> AgregarUsuario(CreateUserDto createUserDto)
         {
             IMongoCollection<BsonDocument> collection = ObtenerColeccion("Usuario");
             //string hashedPassword = BC.HashPassword(createUserDto.Contrasena);
 
-
+            string hashedPassword = BC.EnhancedHashPassword(createUserDto.Contrasena);
             try
             {
                 //Obtener el nuevo IDUsuario 
@@ -102,7 +103,7 @@ namespace Data.Services
                     _Id = ObjectId.GenerateNewId().ToString(),
                     IDUsuario = nuevoID,
                     Email = createUserDto.Email,
-                    Contrasena = createUserDto.Contrasena
+                    Contrasena = hashedPassword
                 };
 
                 var bsonUsuario = NuevoUsuario.ToBsonDocument();
@@ -116,7 +117,6 @@ namespace Data.Services
             }
 
         }
-
         #region ConsultarUsuario
         public async Task<IEnumerable<UsuarioDto>> ConsultarUsuario()
         {

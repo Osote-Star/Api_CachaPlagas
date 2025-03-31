@@ -1,5 +1,6 @@
 ﻿using Data.Interfaces;
 using DTOs.TrampaDto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 using System.Formats.Asn1;
@@ -8,6 +9,7 @@ using System.Formats.Asn1;
 
 namespace Api_cachaplagas.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TrampaController : ControllerBase

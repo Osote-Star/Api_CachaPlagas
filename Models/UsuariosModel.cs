@@ -23,5 +23,15 @@ namespace Models
         [BsonElement("Rol")]
         public string Rol { get; set; } = "usuario";
         public List<TrampaModel> Trampas { get; set; } = [];
+        public override bool Equals(object? obj)
+        {
+            if (obj == null) return false;
+            if (obj is UsuariosModel user) return user.IDUsuario == IDUsuario;
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return IDUsuario.GetHashCode();
+        }
     }
 }

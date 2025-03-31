@@ -1,6 +1,7 @@
 ﻿using Data.Interfaces;
 using DTOs.Usuarios;
 using DTOs.UsuariosDto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -8,6 +9,7 @@ using Models;
 
 namespace Api_cachaplagas.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsuariosController : ControllerBase
@@ -43,10 +45,10 @@ namespace Api_cachaplagas.Controllers
         }
 
         // PUT api/<UsuariosController>/5
-        [HttpPut("RecuperarContrasena")]
-        public async Task<IActionResult> Put([FromBody] RecuperarContrasenaDto recuperarContrasenaDto)
+        [HttpPut("CambiarContrasena")]
+        public async Task<IActionResult> Put([FromBody] CambiarContrasenaDto CambiarContrasenaDto)
         {
-            UsuariosModel task = await _services.RecuperarContrasena(recuperarContrasenaDto);
+            UsuariosModel task = await _services.CambiarContrasena(CambiarContrasenaDto);
             if (task == null) return NotFound();
             return Ok(task);
 

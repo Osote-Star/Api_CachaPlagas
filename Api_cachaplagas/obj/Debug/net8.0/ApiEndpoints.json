@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Api_cachaplagas.Controllers.AuthController",
-    "Method": "Post",
+    "Method": "Login",
     "RelativePath": "api/Auth/Login",
     "HttpMethod": "POST",
     "IsController": true,

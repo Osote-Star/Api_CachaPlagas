@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTOs.UsuariosDto
 {
-    public class RecuperarContrasenaDto
+    public class CambiarContrasenaDto
     {
         public int IDUsuario { get; set; }
         public string Contrasena { get; set; }
