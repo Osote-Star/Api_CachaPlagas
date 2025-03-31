@@ -8,8 +8,8 @@ namespace DTOs.Usuarios
 {
     public class CreateUserDto
     {
-        string Email { get; set; }
-        string Contrasena { get; set; }
+        public string Email { get; set; }
+        public string Contrasena { get; set; }
 
     }
 }

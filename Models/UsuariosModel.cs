@@ -12,15 +12,26 @@ namespace Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string _Id { get; set; }
+        public string? _Id { get; set; }
         [BsonElement("IDUsuario")]
-        public int IDUsuario {  get; set; }
+        public int? IDUsuario {  get; set; }
         [BsonElement("Email")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         [BsonElement("Contrasena")]
-        public string Contrasena { get; set; }
+        public string? Contrasena { get; set; }
         [BsonElement("Rol")]
-        public string Rol { get; set; }
+        public string? Rol { get; set; }
         public List<TrampaModel> Trampas { get; set; } = [];
+
+        public override bool Equals(object? obj)
+        {
+            if (obj == null) return false;
+            if (obj is UsuariosModel user) return user.IDUsuario == IDUsuario;
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return IDUsuario.GetHashCode();
+        }
     }
 }

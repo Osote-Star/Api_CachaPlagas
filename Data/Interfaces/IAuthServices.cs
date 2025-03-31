@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using DTOs.UsuariosDto;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Data.Interfaces
 {
     public interface IAuthServices
     {
-        public Task<UsuariosModel> RecuperarContrasena(string Contrasena);
+        public Task<string> Login(LoginDto loginDto);
+        public string GenerarToken(UsuariosModel usuario);
     }
 }

@@ -11,7 +11,7 @@ namespace Data.Services
 {
     public class CapturaServices : ICapturaService
     {
-        private IMongoDatabase? _database;
+        private IMongoDatabase _database;
 
         public CapturaServices(MongoConfiguration client) => _database = client.GetClient().GetDatabase("CachaPlagas");
 

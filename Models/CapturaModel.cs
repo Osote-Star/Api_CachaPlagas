@@ -13,14 +13,14 @@ namespace Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string _Id { get; set; }
+        public string? _Id { get; set; }
         [BsonElement("IDCaptura")]
-        public int IDCaptura { get; set; }
+        public int? IDCaptura { get; set; }
         [BsonElement("IDTrampa")] 
-        public int IDTrampa { get; set; }
+        public int? IDTrampa { get; set; }
         [BsonElement("Animal")]
-        public string Animal { get; set; }
+        public string? Animal { get; set; }
         [BsonElement("FechaCaptura")]
-        public DateTime FechaCaptura { get; set; }
+        public DateTime? FechaCaptura { get; set; }
     }
 }

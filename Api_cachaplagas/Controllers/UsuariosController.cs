@@ -1,5 +1,7 @@
 ﻿using Data.Interfaces;
+using DTOs.Usuarios;
 using DTOs.UsuariosDto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -30,15 +32,18 @@ namespace Api_cachaplagas.Controllers
 
         // POST api/<UsuariosController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] CreateUserDto createUserDto)
         {
+            UsuariosModel? task = await _services.AgregarUsuario(createUserDto);
+            if (task == null) return NotFound();
+            return Ok(task);
         }
 
         // PUT api/<UsuariosController>/5
         [HttpPut("RecuperarContrasena")]
         public async Task<IActionResult> Put([FromBody] RecuperarContrasenaDto recuperarContrasenaDto)
         {
-            UsuariosModel task = await _services.RecuperarContrasena(recuperarContrasenaDto);
+            UsuariosModel? task = await _services.RecuperarContrasena(recuperarContrasenaDto);
             if (task == null) return NotFound();
             return Ok(task);
 

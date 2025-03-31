@@ -1,5 +1,6 @@
 ﻿using Data.Interfaces;
 using DTOs.TrampaDto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -7,6 +8,7 @@ using Models;
 
 namespace Api_cachaplagas.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TrampaController : ControllerBase
@@ -24,7 +26,7 @@ namespace Api_cachaplagas.Controllers
 
         // GET api/<TrampaController>/5
         [HttpGet("MostrarEstadistica")]
-        public async Task<IActionResult> Get(int TrampaID)
+        public async Task<IActionResult> MostrarEstadistica(int TrampaID)
         {
             TrampaModel task = await _services.MostrarEstadistica(TrampaID);
             if (task == null) return NotFound();
@@ -38,8 +40,8 @@ namespace Api_cachaplagas.Controllers
         }
 
         // PUT api/<TrampaController>/5
-        [HttpPut("AnadirTrampa")]
-        public async Task<IActionResult> Put([FromBody] VincularTrampaDto vincularTrampaDto)
+        [HttpPut("VincularTrampa")]
+        public async Task<IActionResult> VincularTrampa([FromBody] VincularTrampaDto vincularTrampaDto)
         {
             TrampaModel trampa = await _services.VincularTrampa(vincularTrampaDto);
             if(trampa == null) return NotFound();

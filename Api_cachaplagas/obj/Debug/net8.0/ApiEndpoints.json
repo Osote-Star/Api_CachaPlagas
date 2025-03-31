@@ -21,28 +21,6 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.AuthController",
-    "Method": "Post",
-    "RelativePath": "api/Auth",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Api_cachaplagas.Controllers.AuthController",
     "Method": "Get",
     "RelativePath": "api/Auth/{id}",
     "HttpMethod": "GET",
@@ -115,6 +93,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "DTOs.UsuariosDto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.CapturaController",
@@ -299,23 +293,7 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
-    "Method": "Put",
-    "RelativePath": "api/Trampa/AnadirTrampa",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "vincularTrampaDto",
-        "Type": "DTOs.TrampaDto.VincularTrampaDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
-    "Method": "Get",
+    "Method": "MostrarEstadistica",
     "RelativePath": "api/Trampa/MostrarEstadistica",
     "HttpMethod": "GET",
     "IsController": true,
@@ -325,6 +303,22 @@
         "Name": "TrampaID",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "VincularTrampa",
+    "RelativePath": "api/Trampa/VincularTrampa",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vincularTrampaDto",
+        "Type": "DTOs.TrampaDto.VincularTrampaDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -358,18 +352,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "createUserDto",
+        "Type": "DTOs.Usuarios.CreateUserDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",
