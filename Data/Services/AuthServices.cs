@@ -72,5 +72,10 @@ namespace Data.Services
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+        public async Task<UsuariosModel> CambiarContrasena(string Contrasena)//nomas para que no truene
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,50 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\",
+  "WorkspaceRootPath": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\interfaces\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\marti\\desktop\\proyectos\\api_cachaplagas\\data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\controllers\\capturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\capturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\controllers\\emailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\emailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\marti\\desktop\\proyectos\\api_cachaplagas\\api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,146 +22,49 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EmailsController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\EmailsController.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\EmailsController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\EmailsController.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Controllers\\EmailsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwDIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:16:36.365Z",
+              "WhenOpened": "2025-04-02T15:01:06.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwDIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:16:28.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TrampaController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:16:22.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CapturaController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\CapturaController.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\CapturaController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\CapturaController.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Controllers\\CapturaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:16:09.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Api_cachaplagas\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T17:14:04.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Program.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Program.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwDMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:11:16.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:10:18.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "AuthServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
               "RelativeDocumentMoniker": "Data\\Services\\AuthServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
               "RelativeToolTip": "Data\\Services\\AuthServices.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwEsAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:28:31.164Z",
+              "WhenOpened": "2025-04-02T14:59:59.463Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuariosServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
-              "RelativeDocumentMoniker": "Data\\Services\\UsuariosServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
-              "RelativeToolTip": "Data\\Services\\UsuariosServices.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAA8wDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:19:38.494Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IAuthServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Interfaces\\IAuthServices.cs",
-              "RelativeDocumentMoniker": "Data\\Interfaces\\IAuthServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Interfaces\\IAuthServices.cs",
-              "RelativeToolTip": "Data\\Interfaces\\IAuthServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:16:48.004Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:1323641800:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsuariosModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
-              "RelativeDocumentMoniker": "Models\\UsuariosModel.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
-              "RelativeToolTip": "Models\\UsuariosModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:12:57.843Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }
