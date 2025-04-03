@@ -34,15 +34,15 @@ namespace Data.Services
             return _database.GetCollection<UsuariosModel>(nombreColeccion);
         }
 
-        public async Task<UsuariosModel> CambiarContrasena(CambiarContrasenaDto recuperarContrasenaDto)
+        public async Task<UsuariosModel> CambiarContrasena(CambiarContrasenaDto cambiarContrasenaDto)
         {
             IMongoCollection<BsonDocument> collection = ObtenerColeccion("Usuario");
-
+            string hashedPassword = BC.EnhancedHashPassword(cambiarContrasenaDto.Contrasena);
             try
             {
-                var filtro = Builders<BsonDocument>.Filter.Eq("IDUsuario", recuperarContrasenaDto.IDUsuario);
+                var filtro = Builders<BsonDocument>.Filter.Eq("Email", cambiarContrasenaDto.Email);
                 var actualizacion = Builders<BsonDocument>.Update
-                    .Set("Contrasena", recuperarContrasenaDto.Contrasena);
+                    .Set("Contrasena", hashedPassword);
 
                 var nuevoDocumento = new FindOneAndUpdateOptions<BsonDocument>
                 {

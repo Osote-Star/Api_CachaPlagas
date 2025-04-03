@@ -37,3 +37,16 @@ C:\Users\marti\Desktop\Proyectos\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.dll
 C:\Users\marti\Desktop\Proyectos\Api_CachaPlagas\DTOs\obj\Debug\net8.0\refint\DTOs.dll
 C:\Users\marti\Desktop\Proyectos\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.pdb
 C:\Users\marti\Desktop\Proyectos\Api_CachaPlagas\DTOs\obj\Debug\net8.0\ref\DTOs.dll
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\bin\Debug\net8.0\DTOs.deps.json
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\bin\Debug\net8.0\DTOs.dll
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\bin\Debug\net8.0\DTOs.pdb
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.csproj.AssemblyReference.cache
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.AssemblyInfoInputs.cache
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.AssemblyInfo.cs
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.csproj.CoreCompileInputs.cache
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.sourcelink.json
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.dll
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\refint\DTOs.dll
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\DTOs.pdb
+C:\Users\rodri\Desktop\proyecto\Api_CachaPlagas\DTOs\obj\Debug\net8.0\ref\DTOs.dll

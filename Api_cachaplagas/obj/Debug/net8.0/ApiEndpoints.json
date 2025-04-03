@@ -40,19 +40,25 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
+        "Name": "emailDto",
+        "Type": "DTOs.UsuariosDto.EmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.EmailsController",
+    "Method": "ValidarCodigo",
+    "RelativePath": "api/Emails/validar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "tema",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "cuerpo",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "validarCodigoDto",
+        "Type": "DTOs.UsuariosDto.ValidarCodigoDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -297,6 +303,22 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",
+    "Method": "Put",
+    "RelativePath": "api/Usuarios/CambiarContrasena",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CambiarContrasenaDto",
+        "Type": "DTOs.UsuariosDto.CambiarContrasenaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",
     "Method": "ObtenerUsuarios",
     "RelativePath": "api/Usuarios/ObtenerUsuarios",
     "HttpMethod": "GET",
@@ -314,21 +336,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",
-    "Method": "Put",
-    "RelativePath": "api/Usuarios/RecuperarContrasena",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "recuperarContrasenaDto",
-        "Type": "DTOs.UsuariosDto.RecuperarContrasenaDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]

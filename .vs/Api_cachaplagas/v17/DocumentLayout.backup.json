@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\",
+  "WorkspaceRootPath": "C:\\Users\\rodri\\Desktop\\proyecto\\Api_CachaPlagas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\marti\\desktop\\proyectos\\api_cachaplagas\\data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\rodri\\desktop\\proyecto\\api_cachaplagas\\data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\marti\\desktop\\proyectos\\api_cachaplagas\\api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\rodri\\desktop\\proyecto\\api_cachaplagas\\api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\rodri\\desktop\\proyecto\\api_cachaplagas\\models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAqwDIAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T15:01:06.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthServices.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
-              "RelativeDocumentMoniker": "Data\\Services\\AuthServices.cs",
-              "ToolTip": "C:\\Users\\marti\\Desktop\\Proyectos\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
-              "RelativeToolTip": "Data\\Services\\AuthServices.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwEsAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T14:59:59.463Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -56,15 +38,54 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuariosModel.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\proyecto\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
+              "RelativeDocumentMoniker": "Models\\UsuariosModel.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\proyecto\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
+              "RelativeToolTip": "Models\\UsuariosModel.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA4wBgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T21:03:46.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosServices.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\proyecto\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\UsuariosServices.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\proyecto\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
+              "RelativeToolTip": "Data\\Services\\UsuariosServices.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T20:46:36.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\proyecto\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\proyecto\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Api_cachaplagas\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T20:46:12.147Z",
+              "EditorCaption": ""
             }
           ]
         }
