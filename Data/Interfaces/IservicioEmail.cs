@@ -10,6 +10,7 @@ namespace Data.Interfaces
 {
     public interface IservicioEmail
     {
-        public Task EnviarEmail(string emailReceptor, string tema, string cuerpo);
+        public Task EnviarEmail(EmailDto emailDto);
+        bool ValidarCodigo(ValidarCodigoDto validarCodigoDto);
     }
 }

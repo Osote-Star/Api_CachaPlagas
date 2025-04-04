@@ -15,10 +15,32 @@ namespace Api_cachaplagas.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Enviar(string email, string tema, string cuerpo)
+        public async Task<IActionResult> Enviar([FromBody] EmailDto emailDto){
+            if(emailDto == null || string.IsNullOrEmpty(emailDto.emailReceptor)){
+                return BadRequest("El email receptor es requerido");
+            }
+
+            await this.servicioEmail.EnviarEmail(emailDto);
+            return Ok("Correo Enviado exitosamente");
+        }
+
+        [HttpPost("validar")]
+        public IActionResult ValidarCodigo([FromBody] ValidarCodigoDto validarCodigoDto)
         {
-            await servicioEmail.EnviarEmail(email, tema, cuerpo);
-            return Ok();
+            if (validarCodigoDto == null || string.IsNullOrEmpty(validarCodigoDto.emailReceptor) || string.IsNullOrEmpty(validarCodigoDto.codigo))
+            {
+            return BadRequest("El correo y el código son obligatorios.");
+            }
+
+            bool esValido = servicioEmail.ValidarCodigo(validarCodigoDto);
+            if (esValido)
+            {
+            return Ok("Código válido.");
+            }
+            else
+            {
+            return BadRequest("Código incorrecto o expirado.");
+            }
         }
     }
 }

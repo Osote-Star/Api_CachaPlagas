@@ -28,19 +28,21 @@ namespace Api_cachaplagas
             builder.Services.AddScoped<ITrampaServices, TrampaServices>();
             builder.Services.AddScoped<IUsuarioService, UsuariosServices>();
             builder.Services.AddScoped<IAuthServices, AuthServices>();
+            builder.Services.AddScoped<ICapturaService,CapturaServices>();
+            builder.Services.AddScoped<IservicioEmail, ServiceEMail>();
 
 
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowFrontend", policy =>
                 {
-                    policy.WithOrigins("http://localhost:4200")
+                    policy.WithOrigins()
                     .AllowAnyHeader()
                     .AllowAnyMethod();
                 });
             });
 
-            // Configuración de autenticación JWT
+            // Configuraciï¿½n de autenticaciï¿½n JWT
             builder.Services.AddAuthentication(config =>
             {
                 config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -61,7 +63,7 @@ namespace Api_cachaplagas
 
             builder.Services.AddAuthorization();
 
-            // Configuración de Swagger con autenticación JWT
+            // Configuraciï¿½n de Swagger con autenticaciï¿½n JWT
             builder.Services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mi API", Version = "v1" });
@@ -97,15 +99,15 @@ namespace Api_cachaplagas
 
             var app = builder.Build();
 
-            app.UseAuthentication(); // Habilitar autenticación
-            app.UseAuthorization();  // Habilitar autorización
+            app.UseAuthentication(); // Habilitar autenticaciï¿½n
+            app.UseAuthorization();  // Habilitar autorizaciï¿½n
 
             // Habilitar Swagger
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mi API V1");
-                c.RoutePrefix = "swagger"; // Ahora Swagger estará en /swagger en lugar de /
+                c.RoutePrefix = "swagger"; // Ahora Swagger estarï¿½ en /swagger en lugar de /
             });
 
             app.MapControllers();

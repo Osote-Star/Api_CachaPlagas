@@ -103,29 +103,56 @@
         "tags": [
           "Emails"
         ],
-        "parameters": [
-          {
-            "name": "email",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tema",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "cuerpo",
-            "in": "query",
-            "schema": {
-              "type": "string"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailDto"
+              }
             }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Emails/validar": {
+      "post": {
+        "tags": [
+          "Emails"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidarCodigoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidarCodigoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidarCodigoDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -655,9 +682,9 @@
       "CambiarContrasenaDto": {
         "type": "object",
         "properties": {
-          "idUsuario": {
-            "type": "integer",
-            "format": "int32"
+          "email": {
+            "type": "string",
+            "nullable": true
           },
           "contrasena": {
             "type": "string",
@@ -734,6 +761,20 @@
             "nullable": true
           },
           "localizacion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmailDto": {
+        "type": "object",
+        "properties": {
+          "emailReceptor": {
+            "type": "string",
+            "nullable": true
+          },
+          "tema": {
             "type": "string",
             "nullable": true
           }
@@ -853,6 +894,20 @@
             "nullable": true
           },
           "rol": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ValidarCodigoDto": {
+        "type": "object",
+        "properties": {
+          "emailReceptor": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigo": {
             "type": "string",
             "nullable": true
           }

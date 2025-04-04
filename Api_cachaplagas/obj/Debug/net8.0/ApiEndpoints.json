@@ -56,19 +56,25 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
+        "Name": "emailDto",
+        "Type": "DTOs.UsuariosDto.EmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.EmailsController",
+    "Method": "ValidarCodigo",
+    "RelativePath": "api/Emails/validar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "tema",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "cuerpo",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "validarCodigoDto",
+        "Type": "DTOs.UsuariosDto.ValidarCodigoDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -8,7 +8,7 @@ namespace DTOs.UsuariosDto
 {
     public class CambiarContrasenaDto
     {
-        public int IDUsuario { get; set; }
+        public string Email { get; set; }
         public string Contrasena { get; set; }
     }
 }

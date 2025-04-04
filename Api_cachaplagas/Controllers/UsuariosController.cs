@@ -9,7 +9,7 @@ using Models;
 
 namespace Api_cachaplagas.Controllers
 {
-    [Authorize]
+    // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsuariosController : ControllerBase

@@ -31,7 +31,7 @@ namespace Models
         }
         public override int GetHashCode()
         {
-            return IDUsuario.GetHashCode();
+            return Email.GetHashCode();
         }
     }
 }
