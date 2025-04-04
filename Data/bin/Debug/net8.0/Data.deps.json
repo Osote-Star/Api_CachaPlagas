@@ -242,6 +242,7 @@
       },
       "DTOs/1.0.0": {
         "dependencies": {
+          "Models": "1.0.0",
           "MongoDB.Driver": "3.2.0"
         },
         "runtime": {

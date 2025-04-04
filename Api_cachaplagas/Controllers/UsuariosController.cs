@@ -33,6 +33,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // POST api/<UsuariosController>
+       
         [HttpPost("AgregarUsuario")]
         public async Task<IActionResult> AgregarUsuario([FromBody] CreateUserDto createUserDto)
         {
@@ -46,9 +47,9 @@ namespace Api_cachaplagas.Controllers
 
         // PUT api/<UsuariosController>/5
         [HttpPut("CambiarContrasena")]
-        public async Task<IActionResult> Put([FromBody] CambiarContrasenaDto CambiarContrasenaDto)
+        public async Task<IActionResult> Put([FromBody] CambiarContrasenaDto cambiarContrasenaDto)
         {
-            UsuariosModel task = await _services.CambiarContrasena(CambiarContrasenaDto);
+            UsuariosModel task = await _services.CambiarContrasena(cambiarContrasenaDto);
             if (task == null) return NotFound();
             return Ok(task);
 

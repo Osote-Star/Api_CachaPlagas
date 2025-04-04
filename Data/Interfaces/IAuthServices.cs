@@ -1,4 +1,5 @@
-﻿using DTOs.UsuariosDto;
+﻿using DTOs.AuthDto;
+using DTOs.UsuariosDto;
 using Models;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,10 @@ namespace Data.Interfaces
 {
     public interface IAuthServices
     {
-        public Task<UsuariosModel> CambiarContrasena(string Contrasena);
-        public Task<string> Login(LoginDto loginDto);
-        public string GenerarToken(UsuariosModel usuario);
+        public Task<UsuariosModel> RecuperarContrasena(string Contrasena);
+        public Task<TokenDto> Login(LoginDto loginDto);
+        public Task<TokenDto> ReturnsTokens(UsuariosModel usuario);
+        public  Task<TokenDto> RefreshToken(TokenDto tokenDto);
+
     }
 }

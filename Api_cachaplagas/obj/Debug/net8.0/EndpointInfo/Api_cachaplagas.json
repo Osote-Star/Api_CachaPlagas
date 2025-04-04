@@ -36,6 +36,37 @@
         }
       }
     },
+    "/api/Auth/refresh-token": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Captura/AgregarCaptura": {
       "post": {
         "tags": [
@@ -546,7 +577,7 @@
         }
       }
     },
-    "/api/Usuarios/RecuperarContrasena": {
+    "/api/Usuarios/CambiarContrasena": {
       "put": {
         "tags": [
           "Usuarios"
@@ -555,17 +586,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RecuperarContrasenaDto"
+                "$ref": "#/components/schemas/CambiarContrasenaDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RecuperarContrasenaDto"
+                "$ref": "#/components/schemas/CambiarContrasenaDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RecuperarContrasenaDto"
+                "$ref": "#/components/schemas/CambiarContrasenaDto"
               }
             }
           }
@@ -617,6 +648,20 @@
           },
           "estatusSensor": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CambiarContrasenaDto": {
+        "type": "object",
+        "properties": {
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "contrasena": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -735,14 +780,14 @@
         },
         "additionalProperties": false
       },
-      "RecuperarContrasenaDto": {
+      "TokenDto": {
         "type": "object",
         "properties": {
-          "idUsuario": {
-            "type": "integer",
-            "format": "int32"
+          "accessToken": {
+            "type": "string",
+            "nullable": true
           },
-          "contrasena": {
+          "refreshToken": {
             "type": "string",
             "nullable": true
           }
