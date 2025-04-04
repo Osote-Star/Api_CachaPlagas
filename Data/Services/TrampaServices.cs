@@ -210,23 +210,33 @@ namespace Data.Services
         #region BuscarTrampa
 
         public async Task<TrampaModel> BuscarTrampa(int trampaID)
+{
+    IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+    try
+    {
+        // Filtro combinado: IDTrampa coincide y IDUsuario es exactamente 0
+        var filtro = Builders<BsonDocument>.Filter.And(
+            Builders<BsonDocument>.Filter.Eq("IDTrampa", trampaID),
+            Builders<BsonDocument>.Filter.Eq("IDUsuario", 0)
+        );
+
+        var documento = await collection.Find(filtro).FirstOrDefaultAsync();
+
+        if (documento != null)
         {
-            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
-            try
-            {
-                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", trampaID);
-                var documento = await collection.Find(filtro).FirstOrDefaultAsync();
-                if (documento != null)
-                {
-                    return BsonSerializer.Deserialize<TrampaModel>(documento);
-                }
-                return null;
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
+            Console.WriteLine($"Documento encontrado: {documento.ToJson()}"); // Depuración
+            return BsonSerializer.Deserialize<TrampaModel>(documento);
         }
+
+        Console.WriteLine($"No se encontró trampa con IDTrampa: {trampaID} y IDUsuario = 0."); // Depuración
+        return null;
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error en BuscarTrampa: {ex.Message}"); // Depuración
+        return null;
+    }
+}
 
         #endregion
 
