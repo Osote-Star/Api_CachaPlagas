@@ -51,6 +51,28 @@ namespace Api_cachaplagas.Controllers
             return Ok(task);
         }
 
+        [HttpGet("ObtenerEstatusSensor/{trampaID}")]
+        public async Task<IActionResult> GetEstatusSensor(int trampaID)
+        {
+            var estatus = await _services.ObtenerEstatusSensor(trampaID);
+            if (estatus == null)
+            {
+                return NotFound("No se encontró la trampa especificada o su estatus de sensor.");
+            }
+            return Ok(new { EstatusSensor = estatus });
+        }
+
+        [HttpGet("ObtenerEstatusPuerta/{trampaID}")]
+        public async Task<IActionResult> GetEstatusPuerta(int trampaID)
+        {
+            var estatus = await _services.ObtenerEstatusPuerta(trampaID);
+            if (estatus == null)
+            {
+                return NotFound("No se encontró la trampa especificada o su estatus de puerta.");
+            }
+            return Ok(new { EstatusPuerta = estatus });
+        }
+
         // POST api/<TrampaController>
         [HttpPost("AgregarTrampa")]
         public async Task<ActionResult<TrampaModel>> AgregarTrampa([FromBody] AgregarTrampaDto agregarTrampa)

@@ -271,6 +271,52 @@
         }
       }
     },
+    "/api/Trampa/ObtenerEstatusSensor/{trampaID}": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "trampaID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/ObtenerEstatusPuerta/{trampaID}": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "trampaID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Trampa/AgregarTrampa": {
       "post": {
         "tags": [

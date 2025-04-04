@@ -342,3 +342,4 @@ C:\Users\marti\Desktop\asdsa\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\re
 C:\Users\marti\Desktop\asdsa\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.pdb
 C:\Users\marti\Desktop\asdsa\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.genruntimeconfig.cache
 C:\Users\marti\Desktop\asdsa\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\ref\Api_cachaplagas.dll
+C:\Users\marti\Desktop\asdsa\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

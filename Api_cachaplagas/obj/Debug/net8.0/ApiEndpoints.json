@@ -239,6 +239,38 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "GetEstatusPuerta",
+    "RelativePath": "api/Trampa/ObtenerEstatusPuerta/{trampaID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trampaID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "GetEstatusSensor",
+    "RelativePath": "api/Trampa/ObtenerEstatusSensor/{trampaID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trampaID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
     "Method": "Put",
     "RelativePath": "api/Trampa/VincularTrampa",
     "HttpMethod": "PUT",

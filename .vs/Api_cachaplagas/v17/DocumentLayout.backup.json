@@ -1,38 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\",
+  "WorkspaceRootPath": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\marti\\desktop\\asdsa\\api_cachaplagas\\api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\interfaces\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\iauthservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\marti\\desktop\\asdsa\\api_cachaplagas\\data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\models\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\marti\\desktop\\asdsa\\api_cachaplagas\\data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\dtos\\authdto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\marti\\desktop\\asdsa\\api_cachaplagas\\models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\marti\\desktop\\asdsa\\api_cachaplagas\\dtos\\authdto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\authdto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\marti\\desktop\\asdsa\\api_cachaplagas\\models\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,101 +34,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1323641800:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITrampaServices.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
+              "RelativeDocumentMoniker": "Data\\Interfaces\\ITrampaServices.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
+              "RelativeToolTip": "Data\\Interfaces\\ITrampaServices.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:50:05.543Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Data",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Data.csproj",
-              "RelativeDocumentMoniker": "Data\\Data.csproj",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Data.csproj",
-              "RelativeToolTip": "Data\\Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-04T08:12:47.125Z",
+              "Title": "TrampaController.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
+              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\TrampaController.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
+              "RelativeToolTip": "Api_cachaplagas\\Controllers\\TrampaController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAowDkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:49:08.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrampaServices.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\TrampaServices.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
+              "RelativeToolTip": "Data\\Services\\TrampaServices.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAowCoBAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:48:46.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Api_cachaplagas\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Title": "TrampaModel.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Models\\TrampaModel.cs",
+              "RelativeDocumentMoniker": "Models\\TrampaModel.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Models\\TrampaModel.cs",
+              "RelativeToolTip": "Models\\TrampaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:21:47.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TrampaServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
-              "RelativeDocumentMoniker": "Data\\Services\\TrampaServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
-              "RelativeToolTip": "Data\\Services\\TrampaServices.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAwwMEAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:07:50.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
-              "RelativeDocumentMoniker": "Data\\Services\\AuthServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
-              "RelativeToolTip": "Data\\Services\\AuthServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:05:29.51Z",
+              "WhenOpened": "2025-04-04T20:43:05.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TrampaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\TrampaModel.cs",
-              "RelativeDocumentMoniker": "Models\\TrampaModel.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\TrampaModel.cs",
-              "RelativeToolTip": "Models\\TrampaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:07:48.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IAuthServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Interfaces\\IAuthServices.cs",
-              "RelativeDocumentMoniker": "Data\\Interfaces\\IAuthServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Interfaces\\IAuthServices.cs",
-              "RelativeToolTip": "Data\\Interfaces\\IAuthServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:15:04.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "TokenDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\DTOs\\AuthDto\\TokenDto.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\DTOs\\AuthDto\\TokenDto.cs",
               "RelativeDocumentMoniker": "DTOs\\AuthDto\\TokenDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\DTOs\\AuthDto\\TokenDto.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\DTOs\\AuthDto\\TokenDto.cs",
               "RelativeToolTip": "DTOs\\AuthDto\\TokenDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:05:27.088Z"
+              "WhenOpened": "2025-04-04T06:05:27.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "RefreshTokenModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\RefreshTokenModel.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Models\\RefreshTokenModel.cs",
               "RelativeDocumentMoniker": "Models\\RefreshTokenModel.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Models\\RefreshTokenModel.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\asdsa\\Api_CachaPlagas\\Models\\RefreshTokenModel.cs",
               "RelativeToolTip": "Models\\RefreshTokenModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

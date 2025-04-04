@@ -295,5 +295,61 @@ namespace Data.Services
             return result.ModifiedCount > 0;
         }
         #endregion
+
+        #region ObtenerEstatusSensor
+        public async Task<bool?> ObtenerEstatusSensor(int trampaID)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", trampaID);
+                var proyeccion = Builders<BsonDocument>.Projection
+                    .Include("EstatusSensor")
+                    .Exclude("_id");
+
+                var documento = await collection.Find(filtro)
+                    .Project(proyeccion)
+                    .FirstOrDefaultAsync();
+
+                if (documento != null)
+                {
+                    return documento["EstatusSensor"].AsBoolean;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region ObtenerEstatusPuerta
+        public async Task<bool?> ObtenerEstatusPuerta(int trampaID)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", trampaID);
+                var proyeccion = Builders<BsonDocument>.Projection
+                    .Include("EstatusPuerta")
+                    .Exclude("_id");
+
+                var documento = await collection.Find(filtro)
+                    .Project(proyeccion)
+                    .FirstOrDefaultAsync();
+
+                if (documento != null)
+                {
+                    return documento["EstatusPuerta"].AsBoolean;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
     }
 }
