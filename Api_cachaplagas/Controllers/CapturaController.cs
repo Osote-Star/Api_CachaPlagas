@@ -1,5 +1,4 @@
 ﻿using Data.Interfaces;
-using DTOs.CapturaDto;
 using DTOs.Usuarios;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,10 +18,10 @@ namespace Api_cachaplagas.Controllers
 
 
         // POST api/<CapturaController>
-        [HttpPost("AgregarCaptura")]
-        public async Task<IActionResult> AgregarCaptura([FromBody] AgregarCapturaDto agregarCapturaDto)
+        [HttpPost("AgregarCaptura/{TrampaId}")]	
+        public async Task<IActionResult> AgregarCaptura(int TrampaId)
         {
-            CapturaModel captura = await _services.AgregarCaptura(agregarCapturaDto);
+            CapturaModel captura = await _services.AgregarCaptura(TrampaId);
             if (captura == null)
             {
                 return NotFound();

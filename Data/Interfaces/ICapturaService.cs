@@ -1,5 +1,4 @@
-﻿using DTOs.CapturaDto;
-using Models;
+﻿using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +9,6 @@ namespace Data.Interfaces
 {
     public interface ICapturaService
     {
-        public Task<CapturaModel> AgregarCaptura(AgregarCapturaDto agregarCapturaDto);
+        public Task<CapturaModel> AgregarCaptura(int TrampaId);
     }
 }

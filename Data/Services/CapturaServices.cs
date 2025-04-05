@@ -1,5 +1,4 @@
 ﻿using Data.Interfaces;
-using DTOs.CapturaDto;
 using Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -49,7 +48,7 @@ namespace Data.Services
         }
 
 
-        public async Task<CapturaModel> AgregarCaptura(AgregarCapturaDto agregarCapturaDto)
+        public async Task<CapturaModel> AgregarCaptura(int TrampaId)
         {
             IMongoCollection<BsonDocument> collection = ObtenerColeccion("Captura");
             try
@@ -60,8 +59,8 @@ namespace Data.Services
                 {
                     _Id = ObjectId.GenerateNewId().ToString(),
                     IDCaptura = nuevoID,
-                    IDTrampa = agregarCapturaDto.IDTrampa,
-                    FechaCaptura = agregarCapturaDto.FechaCaptura
+                    IDTrampa = TrampaId,
+                    FechaCaptura = DateTime.Now,
                 };
 
                 var bsonservice = nuevacaptura.ToBsonDocument();
