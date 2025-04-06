@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTOs.UsuariosDto
 {
-    public class RecuperarContrasenaDto
+    public class UsuarioDto
     {
         public int IDUsuario { get; set; }
-        public string Contrasena { get; set; }
+        public string Email { get; set; }
+        public string Rol { get; set; }
     }
 }

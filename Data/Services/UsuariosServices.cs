@@ -11,7 +11,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 using BC = BCrypt.Net.BCrypt;   
+=======
+using BC = BCrypt.Net.BCrypt;
+>>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
 
 
 
@@ -27,11 +31,17 @@ namespace Data.Services
         {
             return _database.GetCollection<BsonDocument>(nombreColeccion);
         }
+<<<<<<< HEAD
+=======
+
+        //sobrecarga de obtenerColeecion
+>>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         public IMongoCollection<UsuariosModel> ObtenerColeccion<UsuariosModel>(string nombreColeccion)
         {
             return _database.GetCollection<UsuariosModel>(nombreColeccion);
         }
 
+<<<<<<< HEAD
         #region crearUsuario
         //Metodo para ObtenerProximoId
         public async Task<int> ObtenerProximoId()
@@ -87,14 +97,17 @@ namespace Data.Services
         }
         #endregion
         public async Task<UsuariosModel?> RecuperarContrasena(RecuperarContrasenaDto recuperarContrasenaDto)
+=======
+        public async Task<UsuariosModel> CambiarContrasena(CambiarContrasenaDto cambiarContrasenaDto)
+>>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         {
             IMongoCollection<BsonDocument> collection = ObtenerColeccion("Usuario");
-
+            string hashedPassword = BC.EnhancedHashPassword(cambiarContrasenaDto.Contrasena);
             try
             {
-                var filtro = Builders<BsonDocument>.Filter.Eq("IDUsuario", recuperarContrasenaDto.IDUsuario);
+                var filtro = Builders<BsonDocument>.Filter.Eq("Email", cambiarContrasenaDto.Email);
                 var actualizacion = Builders<BsonDocument>.Update
-                    .Set("Contrasena", recuperarContrasenaDto.Contrasena);
+                    .Set("Contrasena", hashedPassword);
 
                 var nuevoDocumento = new FindOneAndUpdateOptions<BsonDocument>
                 {
@@ -116,5 +129,74 @@ namespace Data.Services
                 return null;
             }
         }
+
+        //Metodo para ObtenerProximoId
+        public async Task<int> ObtenerProximoId()
+        {
+            IMongoCollection<BsonDocument> collection1 = ObtenerColeccion("Usuario");
+            IMongoCollection<UsuariosModel> collection = ObtenerColeccion<UsuariosModel>("Usuario");
+
+            // Obtener todos los usuarios y extraer el _Id máximo
+            var usuarios = await collection.Find(_ => true)
+                                           .Sort(Builders<UsuariosModel>.Sort.Descending(u => u.IDUsuario))
+                                           .Limit(1)
+                                           .ToListAsync();
+
+            if (usuarios.Any())
+            {
+                return usuarios.First().IDUsuario + 1; // Retornar el siguiente ID disponible
+            }
+
+            return 1; // Si no hay usuarios, comenzar desde 1
+        }
+
+
+        public async Task<UsuariosModel?> AgregarUsuario(CreateUserDto createUserDto)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Usuario");
+            //string hashedPassword = BC.HashPassword(createUserDto.Contrasena);
+
+            string hashedPassword = BC.EnhancedHashPassword(createUserDto.Contrasena);
+            try
+            {
+                //Obtener el nuevo IDUsuario 
+
+                int nuevoID = await ObtenerProximoId();
+
+                var NuevoUsuario = new UsuariosModel
+                {
+                    _Id = ObjectId.GenerateNewId().ToString(),
+                    IDUsuario = nuevoID,
+                    Email = createUserDto.Email,
+                    Contrasena = hashedPassword
+                };
+
+                var bsonUsuario = NuevoUsuario.ToBsonDocument();
+                await collection.InsertOneAsync(bsonUsuario);
+                return NuevoUsuario;
+
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+        }
+        #region ConsultarUsuario
+        public async Task<IEnumerable<UsuarioDto>> ConsultarUsuario()
+        {
+            var filtro = Builders<BsonDocument>.Filter.Empty;
+            var documentos = await ObtenerColeccion("Usuario").Find(filtro).ToListAsync();
+
+            return documentos.Select(doc => new UsuarioDto
+            {
+                IDUsuario = doc.GetValue("IDUsuario").AsInt32,
+                Email = doc.GetValue("Email").AsString,
+                Rol = doc.GetValue("Rol").AsString
+            });
+        }
+        #endregion
+
+
     }
 }

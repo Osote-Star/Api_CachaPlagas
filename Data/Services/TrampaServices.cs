@@ -25,6 +25,8 @@ namespace Data.Services
         {
             return _database.GetCollection<BsonDocument>(nombreColeccion);
         }
+
+        #region VincularTrampa
         public async Task<TrampaModel> VincularTrampa(VincularTrampaDto vincularTrampaDto)
         {
             IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
@@ -55,7 +57,9 @@ namespace Data.Services
                 return null;
             }
         }
+        #endregion
 
+        #region MostrarEstadistica
         public async Task<TrampaModel> MostrarEstadistica(int TrampaId)
         {
             var collection = ObtenerColeccion("Trampa");
@@ -90,5 +94,262 @@ namespace Data.Services
                 return null;
             }
         }
+        #endregion
+
+        #region CambiarStatusTrampa
+        public async Task<TrampaModel> CambiarStatusTrampa(CambiarStatusDto cambiarStatusDto)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", cambiarStatusDto.IDtrampa);
+                var actualizacion = Builders<BsonDocument>.Update
+                    .Set("EstatusTrampa", cambiarStatusDto.EstatusTrampa)
+                    .Set("EstatusPuerta", cambiarStatusDto.EstatusPuerta)
+                    .Set("EstatusSensor", cambiarStatusDto.EstatusSensor);
+                var nuevoDocumento = new FindOneAndUpdateOptions<BsonDocument>
+                {
+                    ReturnDocument = ReturnDocument.After // Retorna el documento actualizado
+                };
+                var documentoActualizado = await collection.FindOneAndUpdateAsync(filtro, actualizacion, nuevoDocumento);
+                if (documentoActualizado != null)
+                {
+                    return BsonSerializer.Deserialize<TrampaModel>(documentoActualizado);
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region CambiarStatusSensor
+        public async Task<TrampaModel> CambiarStatusSensor(EstatusSensorDto estatusSensor)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", estatusSensor.IDtrampa);
+                var actualizacion = Builders<BsonDocument>.Update
+                    .Set("EstatusSensor", estatusSensor.estatusSensor);
+                var nuevoDocumento = new FindOneAndUpdateOptions<BsonDocument>
+                {
+                    ReturnDocument = ReturnDocument.After // Retorna el documento actualizado
+                };
+                var documentoActualizado = await collection.FindOneAndUpdateAsync(filtro, actualizacion, nuevoDocumento);
+                if (documentoActualizado != null)
+                {
+                    return BsonSerializer.Deserialize<TrampaModel>(documentoActualizado);
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region CambiarEstatusPuerta
+        public async Task<TrampaModel> CambiarEstatusPuerta(EstatusPuertaDto estatusPuertaDto)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", estatusPuertaDto.IDtrampa);
+                var actualizacion = Builders<BsonDocument>.Update
+                    .Set("EstatusPuerta", estatusPuertaDto.estatusPuerta);
+                var nuevoDocumento = new FindOneAndUpdateOptions<BsonDocument>
+                {
+                    ReturnDocument = ReturnDocument.After // Retorna el documento actualizado
+                };
+                var documentoActualizado = await collection.FindOneAndUpdateAsync(filtro, actualizacion, nuevoDocumento);
+                if (documentoActualizado != null)
+                {
+                    return BsonSerializer.Deserialize<TrampaModel>(documentoActualizado);
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region TodasTrampas
+
+        public async Task<List<TrampaModel>> TodasTrampas(int usuarioID)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDUsuario", usuarioID);
+                var documentos = await collection.Find(filtro).ToListAsync();
+                if (documentos != null && documentos.Count > 0)
+                {
+                    List<TrampaModel> trampas = new List<TrampaModel>();
+                    foreach (var documento in documentos)
+                    {
+                        trampas.Add(BsonSerializer.Deserialize<TrampaModel>(documento));
+                    }
+                    return trampas;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        #endregion
+
+        #region BuscarTrampa
+
+        public async Task<TrampaModel> BuscarTrampa(int trampaID)
+{
+    IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+    try
+    {
+        // Filtro combinado: IDTrampa coincide y IDUsuario es exactamente 0
+        var filtro = Builders<BsonDocument>.Filter.And(
+            Builders<BsonDocument>.Filter.Eq("IDTrampa", trampaID),
+            Builders<BsonDocument>.Filter.Eq("IDUsuario", 0)
+        );
+
+        var documento = await collection.Find(filtro).FirstOrDefaultAsync();
+
+        if (documento != null)
+        {
+            Console.WriteLine($"Documento encontrado: {documento.ToJson()}"); // Depuración
+            return BsonSerializer.Deserialize<TrampaModel>(documento);
+        }
+
+        Console.WriteLine($"No se encontró trampa con IDTrampa: {trampaID} y IDUsuario = 0."); // Depuración
+        return null;
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error en BuscarTrampa: {ex.Message}"); // Depuración
+        return null;
+    }
+}
+
+        #endregion
+
+        #region AgregarTrampa
+        public async Task<TrampaModel> AgregarTrampa(AgregarTrampaDto agregartrampa)
+        {
+
+            var documento = new BsonDocument
+            {
+                { "IDTrampa", agregartrampa.IDTrampa },
+                { "IDUsuario", BsonNull.Value },
+                { "Imagen", agregartrampa.Imagen },
+                { "Modelo", agregartrampa.Modelo },
+                { "Localizacion", BsonNull.Value },
+                { "EstatusTrampa", agregartrampa.EstatusTrampa },
+                { "EstatusPuerta", agregartrampa.EstatusPuerta },
+                { "EstatusSensor", agregartrampa.EstatusSensor }
+
+            };
+
+            await ObtenerColeccion("Trampa").InsertOneAsync(documento);
+
+            return 
+            new TrampaModel
+            {
+                IDTrampa = documento.GetValue("IDTrampa").ToInt32(),
+                Imagen = documento.GetValue("Imagen").ToString(),
+                Modelo = documento.GetValue("Modelo").ToString(),
+                EstatusTrampa = documento.GetValue("EstatusTrampa").ToBoolean(),
+                EstatusPuerta = documento.GetValue("EstatusPuerta").ToBoolean(),
+                EstatusSensor = documento.GetValue("EstatusSensor").ToBoolean(),
+            };
+        }
+        #endregion
+
+        #region EditarLocalizacion
+        public async Task<bool> EditarLocalizacion(EditarLocalizacionDto dto)
+        {
+            var trampaCollection = ObtenerColeccion("Trampa");
+
+            var filter = Builders<BsonDocument>.Filter.Eq("IDUsuario", Convert.ToInt32(dto.IDUsuario));
+            var trampa = await trampaCollection.Find(filter).FirstOrDefaultAsync();
+
+            if (trampa == null)
+            {
+                Console.WriteLine($"❌ No se encontró la trampa con Id: {dto.IDUsuario}");
+                return false;
+            }
+
+            Console.WriteLine($"✅ Trampa encontrada en MongoDB: {trampa}");
+
+
+            var update = Builders<BsonDocument>.Update.Set("Localizacion", dto.Localizacion);
+
+            var result = await trampaCollection.UpdateOneAsync(filter, update);
+            return result.ModifiedCount > 0;
+        }
+        #endregion
+
+        #region ObtenerEstatusSensor
+        public async Task<bool?> ObtenerEstatusSensor(int trampaID)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", trampaID);
+                var proyeccion = Builders<BsonDocument>.Projection
+                    .Include("EstatusSensor")
+                    .Exclude("_id");
+
+                var documento = await collection.Find(filtro)
+                    .Project(proyeccion)
+                    .FirstOrDefaultAsync();
+
+                if (documento != null)
+                {
+                    return documento["EstatusSensor"].AsBoolean;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region ObtenerEstatusPuerta
+        public async Task<bool?> ObtenerEstatusPuerta(int trampaID)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", trampaID);
+                var proyeccion = Builders<BsonDocument>.Projection
+                    .Include("EstatusPuerta")
+                    .Exclude("_id");
+
+                var documento = await collection.Find(filtro)
+                    .Project(proyeccion)
+                    .FirstOrDefaultAsync();
+
+                if (documento != null)
+                {
+                    return documento["EstatusPuerta"].AsBoolean;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
     }
 }

@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+=======
+﻿using Data.Interfaces;
+using DTOs.Usuarios;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Models;
+>>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,36 +18,22 @@ namespace Api_cachaplagas.Controllers
     [ApiController]
     public class CapturaController : ControllerBase
     {
-        // GET: api/<CapturaController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<CapturaController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        private ICapturaService _services;
+        public CapturaController(ICapturaService services) => _services = services;
 
         // POST api/<CapturaController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("AgregarCaptura/{TrampaId}")]
+        [Authorize(AuthenticationSchemes = "TokenUsuario,TokenTrampa")]
+        public async Task<IActionResult> AgregarCaptura(int TrampaId)
         {
+            CapturaModel captura = await _services.AgregarCaptura(TrampaId);
+            if (captura == null)
+            {
+                return NotFound();
+            }
+            return Ok(captura);
         }
 
-        // PUT api/<CapturaController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<CapturaController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

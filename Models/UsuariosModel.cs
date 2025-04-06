@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Models
 {
@@ -20,9 +21,14 @@ namespace Models
         [BsonElement("Contrasena")]
         public string? Contrasena { get; set; }
         [BsonElement("Rol")]
+<<<<<<< HEAD
         public string? Rol { get; set; }
         public List<TrampaModel> Trampas { get; set; } = [];
 
+=======
+        public string Rol { get; set; } = "usuario";
+        public List<TrampaModel> Trampas { get; set; } = [];
+>>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         public override bool Equals(object? obj)
         {
             if (obj == null) return false;
@@ -31,7 +37,11 @@ namespace Models
         }
         public override int GetHashCode()
         {
+<<<<<<< HEAD
             return IDUsuario.GetHashCode();
+=======
+            return Email.GetHashCode();
+>>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         }
     }
 }

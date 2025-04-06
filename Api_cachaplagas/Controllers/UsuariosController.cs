@@ -17,42 +17,48 @@ namespace Api_cachaplagas.Controllers
         public UsuariosController(IUsuarioService services) => _services = services;
 
         // GET: api/<UsuariosController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpGet("ObtenerUsuarios")]
+        public async Task<ActionResult<IEnumerable<UsuarioDto>>> ObtenerUsuarios()
         {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<UsuariosController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
+            var usuarios = await _services.ConsultarUsuario();
+            return Ok(usuarios);
         }
 
         // POST api/<UsuariosController>
+<<<<<<< HEAD
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CreateUserDto createUserDto)
         {
             UsuariosModel? task = await _services.AgregarUsuario(createUserDto);
             if (task == null) return NotFound();
             return Ok(task);
+=======
+        [HttpPost("AgregarUsuario")]
+        public async Task<IActionResult> AgregarUsuario([FromBody] CreateUserDto createUserDto)
+        {
+            UsuariosModel user = await _services.AgregarUsuario(createUserDto);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
+>>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         }
 
         // PUT api/<UsuariosController>/5
-        [HttpPut("RecuperarContrasena")]
-        public async Task<IActionResult> Put([FromBody] RecuperarContrasenaDto recuperarContrasenaDto)
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpPut("CambiarContrasena")]
+        public async Task<IActionResult> Put([FromBody] CambiarContrasenaDto cambiarContrasenaDto)
         {
+<<<<<<< HEAD
             UsuariosModel? task = await _services.RecuperarContrasena(recuperarContrasenaDto);
+=======
+            UsuariosModel task = await _services.CambiarContrasena(cambiarContrasenaDto);
+>>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
             if (task == null) return NotFound();
             return Ok(task);
 
-        }
-
-        // DELETE api/<UsuariosController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }
