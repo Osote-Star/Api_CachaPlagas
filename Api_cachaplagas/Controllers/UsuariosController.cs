@@ -26,14 +26,6 @@ namespace Api_cachaplagas.Controllers
         }
 
         // POST api/<UsuariosController>
-<<<<<<< HEAD
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CreateUserDto createUserDto)
-        {
-            UsuariosModel? task = await _services.AgregarUsuario(createUserDto);
-            if (task == null) return NotFound();
-            return Ok(task);
-=======
         [HttpPost("AgregarUsuario")]
         public async Task<IActionResult> AgregarUsuario([FromBody] CreateUserDto createUserDto)
         {
@@ -43,7 +35,6 @@ namespace Api_cachaplagas.Controllers
                 return NotFound();
             }
             return Ok(user);
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         }
 
         // PUT api/<UsuariosController>/5
@@ -51,11 +42,7 @@ namespace Api_cachaplagas.Controllers
         [HttpPut("CambiarContrasena")]
         public async Task<IActionResult> Put([FromBody] CambiarContrasenaDto cambiarContrasenaDto)
         {
-<<<<<<< HEAD
-            UsuariosModel? task = await _services.RecuperarContrasena(recuperarContrasenaDto);
-=======
             UsuariosModel task = await _services.CambiarContrasena(cambiarContrasenaDto);
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
             if (task == null) return NotFound();
             return Ok(task);
 

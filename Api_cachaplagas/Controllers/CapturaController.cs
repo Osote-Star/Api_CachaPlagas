@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-=======
-﻿using Data.Interfaces;
+using Data.Interfaces;
 using DTOs.Usuarios;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

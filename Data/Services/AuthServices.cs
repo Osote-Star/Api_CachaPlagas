@@ -1,9 +1,6 @@
 ﻿using Data.Interfaces;
-<<<<<<< HEAD
-=======
 using DTOs.AuthDto;
 using DTOs.Usuarios;
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
 using DTOs.UsuariosDto;
 using Microsoft.IdentityModel.Tokens;
 using Models;
@@ -15,17 +12,10 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
-<<<<<<< HEAD
-using System.Text;
-using System.Threading.Tasks;
-using BC = BCrypt.Net.BCrypt;   
-
-=======
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using BC = BCrypt.Net.BCrypt;
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
 namespace Data.Services
 {
     public class AuthServices : IAuthServices
@@ -46,44 +36,20 @@ namespace Data.Services
         {
             throw new NotImplementedException();
         }
-<<<<<<< HEAD
-        public async Task<string> Login(LoginDto loginDto)
-=======
 
         public async Task<TokenDto> Login(LoginDto loginDto)
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         {
             IMongoCollection<BsonDocument> collection = ObtenerColeccion("Usuario");
             try
             {
-<<<<<<< HEAD
-                var filtro = Builders<BsonDocument>.Filter.Eq("Email",loginDto.Email);
-
-                var documento = await collection.Find(filtro).FirstOrDefaultAsync();
-                if (documento == null) return "";
-=======
                 var filtro = Builders<BsonDocument>.Filter.Eq("Email", loginDto.Email);
 
                 var documento = await collection.Find(filtro).FirstOrDefaultAsync();
                 if (documento == null) return null;
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
 
                 var user = BsonSerializer.Deserialize<UsuariosModel>(documento);
                 bool ContraseñaCorrespondida = BC.EnhancedVerify(loginDto.Contrasena, user.Contrasena);
 
-<<<<<<< HEAD
-                if (!ContraseñaCorrespondida) return "";
-               
-                return GenerarToken(user);
-            }
-            catch (Exception ex)
-            {
-                return "";
-            }
-        }
-
-        public string GenerarToken(UsuariosModel usuario)
-=======
                 if (!ContraseñaCorrespondida) return null;
 
                 return await ReturnsTokens(user);
@@ -138,7 +104,6 @@ namespace Data.Services
         }
 
         public string GenerarAccessToken(UsuariosModel usuario)
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         {
             var userClaim = new[]
             {
@@ -147,27 +112,16 @@ namespace Data.Services
                 new Claim(ClaimTypes.Role, usuario.Rol ?? ""),
             };
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_KEY") ?? ""));
-<<<<<<< HEAD
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
-
-            var token = new JwtSecurityToken(
-                claims: userClaim,
-                expires: DateTime.Now.AddDays(1),
-=======
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
                 claims: userClaim,
                 expires: DateTime.UtcNow.AddMinutes(15),
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
                 signingCredentials: credentials
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-<<<<<<< HEAD
-    }
-=======
         private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
         {
             var tokenValidationParameters = new TokenValidationParameters
@@ -300,5 +254,4 @@ namespace Data.Services
         }
 
     }    
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
 }

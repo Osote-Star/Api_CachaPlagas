@@ -15,15 +15,11 @@ namespace Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? _Id { get; set; }
         [BsonElement("IDCaptura")]
-        public int? IDCaptura { get; set; }
+        public int IDCaptura { get; set; }
         [BsonElement("IDTrampa")] 
         public int? IDTrampa { get; set; }
         [BsonElement("Animal")]
-<<<<<<< HEAD
-        public string? Animal { get; set; }
-=======
         public string Animal { get; set; } = "desconocido";
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         [BsonElement("FechaCaptura")]
         public DateTime? FechaCaptura { get; set; }
     }

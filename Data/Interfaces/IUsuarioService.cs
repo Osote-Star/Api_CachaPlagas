@@ -11,7 +11,9 @@ namespace Data.Interfaces
 {
     public interface IUsuarioService
     {
-        public Task<UsuariosModel?> RecuperarContrasena(RecuperarContrasenaDto recuperarContrasenaDto);
-        public Task<UsuariosModel?> AgregarUsuario(CreateUserDto createUserDto);
+        public Task<UsuariosModel> AgregarUsuario(CreateUserDto createUserDto);
+        public Task<UsuariosModel> CambiarContrasena(CambiarContrasenaDto cambiarContrasenaDto);
+
+        public Task<IEnumerable<UsuarioDto>> ConsultarUsuario();
     }
 }
