@@ -5,145 +5,6 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Auth": {
-      "get": {
-        "tags": [
-          "Auth"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Auth/{id}": {
-      "get": {
-        "tags": [
-          "Auth"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Auth"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Auth"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Auth/Login": {
       "post": {
         "tags": [
@@ -175,62 +36,26 @@
         }
       }
     },
-    "/api/Captura": {
-      "get": {
-        "tags": [
-          "Captura"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
+    "/api/Auth/refresh-token": {
       "post": {
         "tags": [
-          "Captura"
+          "Auth"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/TokenDto"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/TokenDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/TokenDto"
               }
             }
           }
@@ -242,92 +67,14 @@
         }
       }
     },
-    "/api/Captura/{id}": {
-      "get": {
+    "/api/Auth/LoginTrampa/{idTrampa}": {
+      "post": {
         "tags": [
-          "Captura"
+          "Auth"
         ],
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Captura"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Captura"
-        ],
-        "parameters": [
-          {
-            "name": "id",
+            "name": "idTrampa",
             "in": "path",
             "required": true,
             "schema": {
@@ -343,10 +90,106 @@
         }
       }
     },
-    "/api/Trampa": {
+    "/api/Captura/AgregarCaptura/{TrampaId}": {
+      "post": {
+        "tags": [
+          "Captura"
+        ],
+        "parameters": [
+          {
+            "name": "TrampaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Emails": {
+      "post": {
+        "tags": [
+          "Emails"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Emails/validar": {
+      "post": {
+        "tags": [
+          "Emails"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidarCodigoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidarCodigoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidarCodigoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/Buscar-las-trampas-del-usuario/{usuarioID}": {
       "get": {
         "tags": [
           "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -356,7 +199,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/TrampaModel"
                   }
                 }
               },
@@ -364,7 +207,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/TrampaModel"
                   }
                 }
               },
@@ -372,40 +215,51 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/TrampaModel"
                   }
                 }
               }
             }
           }
         }
-      },
-      "post": {
+      }
+    },
+    "/api/Trampa/Buscar-trampa/{trampaID}": {
+      "get": {
         "tags": [
           "Trampa"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
-              }
+        "parameters": [
+          {
+            "name": "trampaID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrampaModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrampaModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrampaModel"
+                }
+              }
+            }
           }
         }
       }
@@ -428,6 +282,100 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/ObtenerEstatusSensor/{trampaID}": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "trampaID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/ObtenerEstatusPuerta/{trampaID}": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "trampaID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/AgregarTrampa": {
+      "post": {
+        "tags": [
+          "Trampa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgregarTrampaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgregarTrampaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgregarTrampaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrampaModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrampaModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrampaModel"
+                }
+              }
+            }
           }
         }
       }
@@ -463,22 +411,30 @@
         }
       }
     },
-    "/api/Trampa/{id}": {
-      "delete": {
+    "/api/Trampa/CambiarStatusTrampa": {
+      "put": {
         "tags": [
           "Trampa"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CambiarStatusDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CambiarStatusDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CambiarStatusDto"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -486,7 +442,100 @@
         }
       }
     },
-    "/api/Usuarios": {
+    "/api/Trampa/CambiarestatusSensor": {
+      "put": {
+        "tags": [
+          "Trampa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstatusSensorDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstatusSensorDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstatusSensorDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/CambiarEstatusPuerta": {
+      "put": {
+        "tags": [
+          "Trampa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstatusPuertaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstatusPuertaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstatusPuertaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/Editar Localizacion": {
+      "put": {
+        "tags": [
+          "Trampa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarLocalizacionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarLocalizacionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarLocalizacionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuarios/ObtenerUsuarios": {
       "get": {
         "tags": [
           "Usuarios"
@@ -499,7 +548,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/UsuarioDto"
                   }
                 }
               },
@@ -507,7 +556,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/UsuarioDto"
                   }
                 }
               },
@@ -515,14 +564,16 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/UsuarioDto"
                   }
                 }
               }
             }
           }
         }
-      },
+      }
+    },
+    "/api/Usuarios/AgregarUsuario": {
       "post": {
         "tags": [
           "Usuarios"
@@ -553,68 +604,7 @@
         }
       }
     },
-    "/api/Usuarios/{id}": {
-      "get": {
-        "tags": [
-          "Usuarios"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Usuarios"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Usuarios/RecuperarContrasena": {
+    "/api/Usuarios/CambiarContrasena": {
       "put": {
         "tags": [
           "Usuarios"
@@ -623,17 +613,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RecuperarContrasenaDto"
+                "$ref": "#/components/schemas/CambiarContrasenaDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RecuperarContrasenaDto"
+                "$ref": "#/components/schemas/CambiarContrasenaDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RecuperarContrasenaDto"
+                "$ref": "#/components/schemas/CambiarContrasenaDto"
               }
             }
           }
@@ -648,6 +638,94 @@
   },
   "components": {
     "schemas": {
+      "AgregarTrampaDto": {
+        "type": "object",
+        "properties": {
+          "idTrampa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imagen": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "estatusTrampa": {
+            "type": "boolean"
+          },
+          "estatusPuerta": {
+            "type": "boolean"
+          },
+          "estatusSensor": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CambiarContrasenaDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "contrasena": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CambiarStatusDto": {
+        "type": "object",
+        "properties": {
+          "iDtrampa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estatusTrampa": {
+            "type": "boolean"
+          },
+          "estatusPuerta": {
+            "type": "boolean"
+          },
+          "estatusSensor": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CapturaModel": {
+        "type": "object",
+        "properties": {
+          "_Id": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCaptura": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTrampa": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "animal": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaCaptura": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateUserDto": {
         "type": "object",
         "properties": {
@@ -658,6 +736,61 @@
           "contrasena": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EditarLocalizacionDto": {
+        "type": "object",
+        "properties": {
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "localizacion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmailDto": {
+        "type": "object",
+        "properties": {
+          "emailReceptor": {
+            "type": "string",
+            "nullable": true
+          },
+          "tema": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstatusPuertaDto": {
+        "type": "object",
+        "properties": {
+          "iDtrampa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estatusPuerta": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstatusSensorDto": {
+        "type": "object",
+        "properties": {
+          "iDtrampa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estatusSensor": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -676,14 +809,97 @@
         },
         "additionalProperties": false
       },
-      "RecuperarContrasenaDto": {
+      "TokenDto": {
+        "type": "object",
+        "properties": {
+          "accessToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TrampaModel": {
+        "type": "object",
+        "properties": {
+          "_Id": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTrampa": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "imagen": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "localizacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "estatusTrampa": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "estatusSensor": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "estatusPuerta": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "capturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CapturaModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioDto": {
         "type": "object",
         "properties": {
           "idUsuario": {
             "type": "integer",
             "format": "int32"
           },
-          "contrasena": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "rol": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ValidarCodigoDto": {
+        "type": "object",
+        "properties": {
+          "emailReceptor": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigo": {
             "type": "string",
             "nullable": true
           }

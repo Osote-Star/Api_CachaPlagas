@@ -88,14 +88,9 @@ namespace Api_cachaplagas.Controllers
         }
 
         // PUT api/<TrampaController>/5
-<<<<<<< HEAD
-        [HttpPut("VincularTrampa")]
-        public async Task<IActionResult> VincularTrampa([FromBody] VincularTrampaDto vincularTrampaDto)
-=======
         [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpPut("VincularTrampa")]
         public async Task<IActionResult> Put([FromBody] VincularTrampaDto vincularTrampaDto)
->>>>>>> 573fb9a81d4650cda782779fdef313da5880ada6
         {
             TrampaModel trampa = await _services.VincularTrampa(vincularTrampaDto);
             if(trampa == null) return NotFound();
