@@ -16,5 +16,7 @@ namespace Data.Interfaces
         public Task<TokenDto> ReturnsTokens(UsuariosModel usuario);
         public  Task<TokenDto> RefreshToken(TokenDto tokenDto);
 
+        public Task<string> LoginTrampa(int idTrampa);
+
     }
 }

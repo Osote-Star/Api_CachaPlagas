@@ -19,6 +19,7 @@ namespace Api_cachaplagas.Controllers
 
 
         // GET: api/<TrampaController>
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("Buscar-las-trampas-del-usuario/{usuarioID}")]
         public async Task<ActionResult<List<TrampaModel>>> GetTodasTrampas(int usuarioID)
         {
@@ -31,6 +32,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // GET api/<TrampaController>/5
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("Buscar-trampa/{trampaID}")]
         public async Task<ActionResult<TrampaModel>> GetTrampas(int trampaID)
         {
@@ -43,6 +45,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // GET api/<TrampaController>/5
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("MostrarEstadistica")]
         public async Task<IActionResult> Get(int TrampaID)
         {
@@ -51,6 +54,7 @@ namespace Api_cachaplagas.Controllers
             return Ok(task);
         }
 
+        [Authorize(AuthenticationSchemes = "TokenUsuario,TokenTrampa")]
         [HttpGet("ObtenerEstatusSensor/{trampaID}")]
         public async Task<IActionResult> GetEstatusSensor(int trampaID)
         {
@@ -62,6 +66,7 @@ namespace Api_cachaplagas.Controllers
             return Ok(new { EstatusSensor = estatus });
         }
 
+        [Authorize(AuthenticationSchemes = "TokenUsuario,TokenTrampa")]
         [HttpGet("ObtenerEstatusPuerta/{trampaID}")]
         public async Task<IActionResult> GetEstatusPuerta(int trampaID)
         {
@@ -74,6 +79,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // POST api/<TrampaController>
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpPost("AgregarTrampa")]
         public async Task<ActionResult<TrampaModel>> AgregarTrampa([FromBody] AgregarTrampaDto agregarTrampa)
         {
@@ -82,6 +88,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // PUT api/<TrampaController>/5
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpPut("VincularTrampa")]
         public async Task<IActionResult> Put([FromBody] VincularTrampaDto vincularTrampaDto)
         {
@@ -90,6 +97,7 @@ namespace Api_cachaplagas.Controllers
             return Ok(trampa);  
         }
 
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpPut("CambiarStatusTrampa")]
         public async Task<IActionResult> Put([FromBody] CambiarStatusDto cambiarStatusDto)
         {
@@ -98,6 +106,7 @@ namespace Api_cachaplagas.Controllers
             return Ok(trampa);
         }
 
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpPut("CambiarestatusSensor")]
         public async Task<IActionResult> CambiarStatusSensor([FromBody] EstatusSensorDto estatusSensor)
         {
@@ -106,6 +115,7 @@ namespace Api_cachaplagas.Controllers
             return Ok(trampa);
         }
 
+        [Authorize(AuthenticationSchemes = "TokenUsuario,TokenTrampa")]
         [HttpPut("CambiarEstatusPuerta")]
         public async Task<IActionResult> CambiarEstatusPuerta([FromBody] EstatusPuertaDto estatusPuertaDto)
         {
@@ -115,6 +125,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // PUT api/<TrampaController>/5
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpPut("Editar Localizacion")]
         public async Task<IActionResult> EditarSitio([FromBody] EditarLocalizacionDto dto)
         {

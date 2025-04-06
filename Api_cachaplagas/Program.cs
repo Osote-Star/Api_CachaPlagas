@@ -47,7 +47,7 @@ namespace Api_cachaplagas
             {
                 config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(config =>
+            }).AddJwtBearer("TokenUsuario",config =>
             {
                 config.RequireHttpsMetadata = false;
                 config.SaveToken = true;
@@ -59,7 +59,19 @@ namespace Api_cachaplagas
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_KEY") ?? "")),
                     ValidateLifetime = true
                 };
-            });
+            }).AddJwtBearer("TokenTrampa", config =>
+            {
+                config.RequireHttpsMetadata = false;
+                config.SaveToken = true;
+                config.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_KEY_IOT") ?? "")),
+                    ValidateLifetime = true
+                };
+            }); 
 
             builder.Services.AddAuthorization();
 

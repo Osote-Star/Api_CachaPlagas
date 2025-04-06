@@ -40,7 +40,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "CONNECTION_STRING": "mongodb+srv://5323100289:cachaplagas@cluster0.csyt4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-        "JWT_KEY": "SuperSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretKey"
+        "JWT_KEY": "SuperSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretKey",
+        "JWT_KEY_IOT": "SuperSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretKeyIoTIoTIoTIoTIoTIoT"
       }
     }
   }

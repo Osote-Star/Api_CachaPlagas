@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.AuthController",
+    "Method": "LoginTrampa",
+    "RelativePath": "api/Auth/LoginTrampa/{idTrampa}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTrampa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.AuthController",
     "Method": "RefreshToken",
     "RelativePath": "api/Auth/refresh-token",
     "HttpMethod": "POST",
@@ -34,14 +50,14 @@
   {
     "ContainingType": "Api_cachaplagas.Controllers.CapturaController",
     "Method": "AgregarCaptura",
-    "RelativePath": "api/Captura/AgregarCaptura",
+    "RelativePath": "api/Captura/AgregarCaptura/{TrampaId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "agregarCapturaDto",
-        "Type": "DTOs.CapturaDto.AgregarCapturaDto",
+        "Name": "TrampaId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -284,54 +300,6 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",
-    "Method": "Get",
-    "RelativePath": "api/Usuarios/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",
-    "Method": "Delete",
-    "RelativePath": "api/Usuarios/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.UsuariosController",

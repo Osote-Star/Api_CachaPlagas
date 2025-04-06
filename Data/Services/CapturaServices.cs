@@ -55,16 +55,21 @@ namespace Data.Services
             {
                 int nuevoID = await ObtenerProximoIdcaptura();
 
+                // Obtener hora UTC y convertir a la zona horaria de Hermosillo
+                TimeZoneInfo hermosilloTimeZone = TimeZoneInfo.FindSystemTimeZoneById("US Mountain Standard Time"); // Windows
+                DateTime horaHermosillo = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, hermosilloTimeZone);
+
                 var nuevacaptura = new CapturaModel
                 {
                     _Id = ObjectId.GenerateNewId().ToString(),
                     IDCaptura = nuevoID,
                     IDTrampa = TrampaId,
-                    FechaCaptura = DateTime.Now,
+                    FechaCaptura = horaHermosillo, // Usamos la hora convertida
                 };
 
                 var bsonservice = nuevacaptura.ToBsonDocument();
                 await collection.InsertOneAsync(bsonservice);
+
                 return nuevacaptura;
             }
             catch (Exception ex)
@@ -72,6 +77,5 @@ namespace Data.Services
                 return null;
             }
         }
-
     }
 }

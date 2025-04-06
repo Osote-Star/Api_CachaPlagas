@@ -16,9 +16,9 @@ namespace Api_cachaplagas.Controllers
         private ICapturaService _services;
         public CapturaController(ICapturaService services) => _services = services;
 
-
         // POST api/<CapturaController>
-        [HttpPost("AgregarCaptura/{TrampaId}")]	
+        [HttpPost("AgregarCaptura/{TrampaId}")]
+        [Authorize(AuthenticationSchemes = "TokenUsuario,TokenTrampa")]
         public async Task<IActionResult> AgregarCaptura(int TrampaId)
         {
             CapturaModel captura = await _services.AgregarCaptura(TrampaId);

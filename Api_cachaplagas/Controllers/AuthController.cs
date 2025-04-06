@@ -44,6 +44,14 @@ namespace Api_cachaplagas.Controllers
             }
         }
 
+        [HttpPost("LoginTrampa/{idTrampa}")]
+        public async Task<IActionResult> LoginTrampa(int idTrampa)
+        {
+            var token = await _services.LoginTrampa(idTrampa);
+            if (token is null) return Unauthorized();
+            return Ok(token);
+        }
+
 
     }
 }

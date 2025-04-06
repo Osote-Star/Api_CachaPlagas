@@ -59,6 +59,41 @@ namespace Data.Services
                 return null;
             }
         }
+
+        public async Task<string> LoginTrampa(int idTrampa)
+        {
+            IMongoCollection<BsonDocument> collection = ObtenerColeccion("Trampa");
+            try
+            {
+                var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", idTrampa);
+
+                var documento = await collection.Find(filtro).FirstOrDefaultAsync();
+                if (documento == null) return null;
+
+                return GenerarTokenParaDispositivo(idTrampa);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        public string GenerarTokenParaDispositivo(int idTrampa)
+        {
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier,idTrampa.ToString() ?? ""),
+            };
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_KEY_IOT") ?? ""));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                claims: claims,
+                expires: DateTime.Now.AddMonths(12),
+                signingCredentials: credentials);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
         public async Task<TokenDto> ReturnsTokens(UsuariosModel usuario)
         {
             

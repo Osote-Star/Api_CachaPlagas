@@ -9,7 +9,6 @@ using Models;
 
 namespace Api_cachaplagas.Controllers
 {
-    // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsuariosController : ControllerBase
@@ -18,6 +17,7 @@ namespace Api_cachaplagas.Controllers
         public UsuariosController(IUsuarioService services) => _services = services;
 
         // GET: api/<UsuariosController>
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("ObtenerUsuarios")]
         public async Task<ActionResult<IEnumerable<UsuarioDto>>> ObtenerUsuarios()
         {
@@ -25,15 +25,7 @@ namespace Api_cachaplagas.Controllers
             return Ok(usuarios);
         }
 
-        // GET api/<UsuariosController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST api/<UsuariosController>
-       
         [HttpPost("AgregarUsuario")]
         public async Task<IActionResult> AgregarUsuario([FromBody] CreateUserDto createUserDto)
         {
@@ -46,6 +38,7 @@ namespace Api_cachaplagas.Controllers
         }
 
         // PUT api/<UsuariosController>/5
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpPut("CambiarContrasena")]
         public async Task<IActionResult> Put([FromBody] CambiarContrasenaDto cambiarContrasenaDto)
         {
@@ -53,12 +46,6 @@ namespace Api_cachaplagas.Controllers
             if (task == null) return NotFound();
             return Ok(task);
 
-        }
-
-        // DELETE api/<UsuariosController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }
