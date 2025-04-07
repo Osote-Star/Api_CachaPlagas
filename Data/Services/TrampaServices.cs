@@ -29,8 +29,36 @@ namespace Data.Services
         {
             return _database.GetCollection<T>(nombreColeccion);
         }
+        public async Task<TrampasPaginasDto> GetTrampasUsuarioPaginado(UsuarioYPaginadoDto usuarioYPaginadoDto)
+        {
+            const int trampasPorPagina = 16;
+            IMongoCollection<TrampaModel> collection = ObtenerColeccion<TrampaModel>("Trampa");
 
-        public async Task<(IEnumerable<TrampaModel> Trampas, long TotalRegistros, int TotalPaginas)> EncontrarTodasTrampasPaginado(int pagina = 1)
+            try
+            {
+                // Filtro para el ID de usuario (asumiendo que TrampaModel tiene una propiedad UsuarioId)
+                var filtroUsuario = Builders<TrampaModel>.Filter.Eq(t => t.IDUsuario, usuarioYPaginadoDto.UsuarioId);
+
+                // Contar solo los registros del usuario
+                var totalRegistros = await collection.CountDocumentsAsync(filtroUsuario);
+                var totalPaginas = (int)Math.Ceiling((double)totalRegistros / trampasPorPagina);
+
+                // Obtener las trampas solo del usuario, con paginación
+                var trampas = await collection.Find(filtroUsuario)
+                    .Skip((usuarioYPaginadoDto.Pagina - 1) * trampasPorPagina)
+                    .Limit(trampasPorPagina)
+                    .ToListAsync();
+
+                return new TrampasPaginasDto(trampas: trampas, totalRegistros: totalRegistros, totalPaginas: totalPaginas);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al obtener trampas: {ex.Message}");
+                return new TrampasPaginasDto([], 0, 0);
+            }
+        }
+
+        public async Task<TrampasPaginasDto> EncontrarTodasTrampasPaginado(int pagina = 1)
         {
             const int trampasPorPagina = 16;
             IMongoCollection<TrampaModel> collection = ObtenerColeccion<TrampaModel>("Trampa");
@@ -45,12 +73,12 @@ namespace Data.Services
                     .Limit(trampasPorPagina)
                     .ToListAsync();
                     
-                return (trampas, totalRegistros, totalPaginas);
+                return new TrampasPaginasDto(trampas: trampas, totalRegistros: totalRegistros, totalPaginas: totalPaginas);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error al obtener trampas: {ex.Message}");
-                return (new List<TrampaModel>(), 0, 0);
+                return new TrampasPaginasDto([], 0, 0);
             }
         }
 
@@ -120,6 +148,78 @@ namespace Data.Services
             catch (Exception ex)
             {
                 return null;
+            }
+        }
+        #endregion
+
+        #region MostrarEstadisticaGenerales
+        public async Task<IEnumerable<TrampaModel>> MostrarEstadisticaGeneral()
+        {
+            var collection = ObtenerColeccion("Trampa");
+            try
+            {
+                // Pipeline optimizado
+                var pipeline = new[]
+                {
+                    new BsonDocument("$lookup", new BsonDocument
+                    {
+                        { "from", "Captura" },
+                        { "localField", "IDTrampa" },
+                        { "foreignField", "IDTrampa" },
+                        { "as", "Capturas" }
+                    })
+                  };
+
+                // Ejecutar pipeline y obtener el primer documento
+                var documentosUnidos = await collection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+
+                if (documentosUnidos == null || !documentosUnidos.Any())
+                    return [];
+
+                // Deserializar la lista de documentos a IEnumerable<TrampaModel>
+                var trampas = documentosUnidos.Select(doc => BsonSerializer.Deserialize<TrampaModel>(doc));
+
+                return trampas;
+            }
+            catch (Exception ex)
+            {
+                return [];
+            }
+        }
+        #endregion
+        #region MostrarEstadisticasUsuario
+        public async Task<IEnumerable<TrampaModel>> MostrarEstadisticaUsuario(int userId)
+        {
+            var collection = ObtenerColeccion("Trampa");
+            try
+            {
+                // Pipeline optimizado
+                var pipeline = new[]
+                {
+                    new BsonDocument("$match", new BsonDocument("IDUsuario", userId)),
+                    new BsonDocument("$lookup", new BsonDocument
+                    {
+                        { "from", "Captura" },
+                        { "localField", "IDTrampa" },
+                        { "foreignField", "IDTrampa" },
+                        { "as", "Capturas" }
+                    })
+                  };
+
+                // Ejecutar pipeline y obtener el primer documento
+                var documentosUnidos = await collection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+
+                if (documentosUnidos == null || !documentosUnidos.Any())
+                    return [];
+
+                // Deserializar la lista de documentos a IEnumerable<TrampaModel>
+                var trampas = documentosUnidos.Select(doc => BsonSerializer.Deserialize<TrampaModel>(doc));
+
+                return trampas;
+            }
+            catch (Exception ex)
+            {
+                return [];
             }
         }
         #endregion
