@@ -175,6 +175,61 @@
         }
       }
     },
+    "/api/Trampa/GetAllTrampasUsuario": {
+      "post": {
+        "tags": [
+          "Trampa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioYPaginadoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioYPaginadoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioYPaginadoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/GetAllTrampas/{pagina}": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "pagina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Trampa/Buscar-las-trampas-del-usuario/{usuarioID}": {
       "get": {
         "tags": [
@@ -264,7 +319,7 @@
         }
       }
     },
-    "/api/Trampa/MostrarEstadistica": {
+    "/api/Trampa/MostrarEstadistica/{TrampaID}": {
       "get": {
         "tags": [
           "Trampa"
@@ -272,7 +327,43 @@
         "parameters": [
           {
             "name": "TrampaID",
-            "in": "query",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/MostrarEstadisticaGeneral": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/MostrarEstadisticaUsuario/{userId}": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -528,30 +619,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Trampa/GetAllTrampas/{pagina}": {
-      "get": {
-        "tags": [
-          "Trampa"
-        ],
-        "parameters": [
-          {
-            "name": "pagina",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -912,6 +979,20 @@
           "rol": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioYPaginadoDto": {
+        "type": "object",
+        "properties": {
+          "pagina": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

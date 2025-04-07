@@ -255,8 +255,24 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "GetAllTrampasUsuario",
+    "RelativePath": "api/Trampa/GetAllTrampasUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioYPaginadoDto",
+        "Type": "DTOs.TrampaDto.UsuarioYPaginadoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
     "Method": "MostrarEstadistica",
-    "RelativePath": "api/Trampa/MostrarEstadistica",
+    "RelativePath": "api/Trampa/MostrarEstadistica/{TrampaID}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -264,7 +280,33 @@
       {
         "Name": "TrampaID",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "MostrarEstadisticaGeneral",
+    "RelativePath": "api/Trampa/MostrarEstadisticaGeneral",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "MostrarEstadisticaUsuario",
+    "RelativePath": "api/Trampa/MostrarEstadisticaUsuario/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -17,6 +17,27 @@ namespace Api_cachaplagas.Controllers
         private ITrampaServices _services;
         public TrampaController(ITrampaServices services) => _services = services;
 
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpPost("GetAllTrampasUsuario")]
+        public async Task<IActionResult> GetAllTrampasUsuario([FromBody] UsuarioYPaginadoDto usuarioYPaginadoDto)
+        {
+            var trampas = await _services.GetTrampasUsuarioPaginado(usuarioYPaginadoDto);
+            if (trampas.TotalRegistros == 0)
+                return NotFound(new { message = "Trampa no encontrada o sin cambios" });
+
+            return Ok(trampas);
+        }
+
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpGet("GetAllTrampas/{pagina}")]
+        public async Task<IActionResult> EncontrarTodasTrampas(int pagina = 1)
+        {
+            var trampas = await _services.EncontrarTodasTrampasPaginado(pagina = 1);
+            if (trampas.TotalRegistros == 0)
+                return NotFound(new { message = "Trampa no encontrada o sin cambios" });
+
+            return Ok(new { trampas.Trampas, trampas.TotalRegistros, trampas.TotalPaginas });
+        }
 
         // GET: api/<TrampaController>
         [Authorize(AuthenticationSchemes = "TokenUsuario")]
@@ -46,11 +67,30 @@ namespace Api_cachaplagas.Controllers
 
         // GET api/<TrampaController>/5
         [Authorize(AuthenticationSchemes = "TokenUsuario")]
-        [HttpGet("MostrarEstadistica")]
+        [HttpGet("MostrarEstadistica/{TrampaID}")]
         public async Task<IActionResult> MostrarEstadistica(int TrampaID)
         {
             TrampaModel task = await _services.MostrarEstadistica(TrampaID);
             if (task == null) return NotFound();
+            return Ok(task);
+        }
+
+        // GET api/<TrampaController>/5
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpGet("MostrarEstadisticaGeneral")]
+        public async Task<IActionResult> MostrarEstadisticaGeneral()
+        {
+            IEnumerable<TrampaModel> task = await _services.MostrarEstadisticaGeneral();
+            if (task.Count() == 0) return NotFound();
+            return Ok(task);
+        }
+
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpGet("MostrarEstadisticaUsuario/{userId}")]
+        public async Task<IActionResult> MostrarEstadisticaUsuario(int userId)
+        {
+            IEnumerable<TrampaModel> task = await _services.MostrarEstadisticaUsuario(userId);
+            if (task.Count() == 0) return NotFound();
             return Ok(task);
         }
 
@@ -136,15 +176,6 @@ namespace Api_cachaplagas.Controllers
             return Ok(new { message = "Ubicación actualizada correctamente" });
         }
 
-        [Authorize(AuthenticationSchemes = "TokenUsuario")]
-        [HttpGet("GetAllTrampas/{pagina}")]
-        public async Task<IActionResult> EncontrarTodasTrampas(int pagina = 1)
-        {
-            var trampas = await _services.EncontrarTodasTrampasPaginado(pagina = 1);
-            if (trampas.TotalRegistros == 0)
-                return NotFound(new { message = "Trampa no encontrada o sin cambios" });
 
-            return Ok(new { trampas.Trampas, trampas.TotalRegistros, trampas.TotalPaginas });
-        }
     }
 }
