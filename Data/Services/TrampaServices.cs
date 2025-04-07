@@ -1,6 +1,7 @@
 ﻿using Data.Interfaces;
 using DTOs.TrampaDto;
 using DTOs.UsuariosDto;
+using Microsoft.AspNetCore.SignalR;
 using Models;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
@@ -19,7 +20,13 @@ namespace Data.Services
     {
         private IMongoDatabase? _database;
 
-        public TrampaServices(MongoConfiguration client) => _database = client.GetClient().GetDatabase("CachaPlagas");
+        private readonly IHubContext<TrampaHub> _hubContext;
+
+        public TrampaServices(MongoConfiguration client, IHubContext<TrampaHub> hubContext)
+        {
+            _database = client.GetClient().GetDatabase("CachaPlagas");
+            _hubContext = hubContext;
+        }
 
         public IMongoCollection<BsonDocument> ObtenerColeccion(string nombreColeccion)
         {
@@ -134,14 +141,23 @@ namespace Data.Services
                 var filtro = Builders<BsonDocument>.Filter.Eq("IDTrampa", estatusSensor.IDtrampa);
                 var actualizacion = Builders<BsonDocument>.Update
                     .Set("EstatusSensor", estatusSensor.estatusSensor);
+
                 var nuevoDocumento = new FindOneAndUpdateOptions<BsonDocument>
                 {
                     ReturnDocument = ReturnDocument.After // Retorna el documento actualizado
                 };
+
                 var documentoActualizado = await collection.FindOneAndUpdateAsync(filtro, actualizacion, nuevoDocumento);
+
                 if (documentoActualizado != null)
                 {
-                    return BsonSerializer.Deserialize<TrampaModel>(documentoActualizado);
+                    // Deserializar el documento actualizado a TrampaModel
+                    var trampaActualizada = BsonSerializer.Deserialize<TrampaModel>(documentoActualizado);
+
+                    // Notificar a todos los clientes conectados sobre la actualización
+                    await _hubContext.Clients.All.SendAsync("ActualizarTrampas", trampaActualizada.IDUsuario);
+
+                    return trampaActualizada;
                 }
                 return null;
             }
@@ -248,12 +264,11 @@ namespace Data.Services
             {
                 { "IDTrampa", agregartrampa.IDTrampa },
                 { "IDUsuario", BsonNull.Value },
-                { "Imagen", agregartrampa.Imagen },
                 { "Modelo", agregartrampa.Modelo },
                 { "Localizacion", BsonNull.Value },
-                { "EstatusTrampa", agregartrampa.EstatusTrampa },
-                { "EstatusPuerta", agregartrampa.EstatusPuerta },
-                { "EstatusSensor", agregartrampa.EstatusSensor }
+                { "EstatusTrampa", BsonNull.Value },
+                { "EstatusPuerta", BsonNull.Value },
+                { "EstatusSensor", BsonNull.Value }
 
             };
 
@@ -263,11 +278,7 @@ namespace Data.Services
             new TrampaModel
             {
                 IDTrampa = documento.GetValue("IDTrampa").ToInt32(),
-                Imagen = documento.GetValue("Imagen").ToString(),
                 Modelo = documento.GetValue("Modelo").ToString(),
-                EstatusTrampa = documento.GetValue("EstatusTrampa").ToBoolean(),
-                EstatusPuerta = documento.GetValue("EstatusPuerta").ToBoolean(),
-                EstatusSensor = documento.GetValue("EstatusSensor").ToBoolean(),
             };
         }
         #endregion

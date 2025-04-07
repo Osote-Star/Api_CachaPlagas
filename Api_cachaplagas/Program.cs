@@ -19,6 +19,7 @@ namespace Api_cachaplagas
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddSignalR();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -111,6 +112,7 @@ namespace Api_cachaplagas
             });
 
             app.MapControllers();
+            app.MapHub<TrampaHub>("/signalrHub");
 
             app.Run();
 
