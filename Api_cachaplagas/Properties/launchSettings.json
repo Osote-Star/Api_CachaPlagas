@@ -16,7 +16,10 @@
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5086",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "mongodb+srv://5323100289:cachaplagas@cluster0.csyt4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "JWT_KEY": "SuperSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretKey",
+        "JWT_KEY_IOT": "SuperSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretKeyIoTIoTIoTIoTIoTIoT"
       }
     },
     "https": {
@@ -26,7 +29,10 @@
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:7229;http://localhost:5086",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "mongodb+srv://5323100289:cachaplagas@cluster0.csyt4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "JWT_KEY": "SuperSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretKey",
+        "JWT_KEY_IOT": "SuperSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretKeyIoTIoTIoTIoTIoTIoT"
       }
     },
     "IIS Express": {

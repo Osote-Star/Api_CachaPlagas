@@ -136,7 +136,15 @@ namespace Api_cachaplagas.Controllers
             return Ok(new { message = "Ubicación actualizada correctamente" });
         }
 
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpGet("GetAllTrampas/{pagina}")]
+        public async Task<IActionResult> EncontrarTodasTrampas(int pagina = 1)
+        {
+            var trampas = await _services.EncontrarTodasTrampasPaginado(pagina = 1);
+            if (trampas.TotalRegistros == 0)
+                return NotFound(new { message = "Trampa no encontrada o sin cambios" });
 
-
+            return Ok(new { trampas.Trampas, trampas.TotalRegistros, trampas.TotalPaginas });
+        }
     }
 }

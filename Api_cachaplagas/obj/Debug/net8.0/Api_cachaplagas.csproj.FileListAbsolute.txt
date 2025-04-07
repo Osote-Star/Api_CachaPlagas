@@ -88,7 +88,6 @@ C:\Users\Lenovo\OneDrive\Escritorio\5toCuatri\INTEGRADOR\Api_CachaPlagas\Api_cac
 C:\Users\Lenovo\OneDrive\Escritorio\5toCuatri\INTEGRADOR\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Api_cachaplagas.props
 C:\Users\Lenovo\OneDrive\Escritorio\5toCuatri\INTEGRADOR\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Api_cachaplagas.props
 C:\Users\Lenovo\OneDrive\Escritorio\5toCuatri\INTEGRADOR\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Lenovo\OneDrive\Escritorio\5toCuatri\INTEGRADOR\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Lenovo\OneDrive\Escritorio\5toCuatri\INTEGRADOR\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cach.C1A23DE3.Up2Date
 C:\Users\Lenovo\OneDrive\Escritorio\5toCuatri\INTEGRADOR\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.genruntimeconfig.cache
 C:\Users\Lenovo\OneDrive\Escritorio\5toCuatri\INTEGRADOR\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\ref\Api_cachaplagas.dll

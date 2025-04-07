@@ -535,6 +535,30 @@
         }
       }
     },
+    "/api/Trampa/GetAllTrampas/{pagina}": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "pagina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Usuarios/ObtenerUsuarios": {
       "get": {
         "tags": [

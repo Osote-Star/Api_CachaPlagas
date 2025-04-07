@@ -239,6 +239,22 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "EncontrarTodasTrampas",
+    "RelativePath": "api/Trampa/GetAllTrampas/{pagina}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagina",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
     "Method": "MostrarEstadistica",
     "RelativePath": "api/Trampa/MostrarEstadistica",
     "HttpMethod": "GET",

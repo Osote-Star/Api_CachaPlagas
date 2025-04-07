@@ -29,5 +29,7 @@ namespace Data.Interfaces
         public Task<bool?> ObtenerEstatusSensor(int trampaID);
         public Task<bool?> ObtenerEstatusPuerta(int trampaID);
 
+        public Task<(IEnumerable<TrampaModel> Trampas, long TotalRegistros, int TotalPaginas)> EncontrarTodasTrampasPaginado(int pagina = 1);
+
     }
 }

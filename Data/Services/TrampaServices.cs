@@ -25,6 +25,34 @@ namespace Data.Services
         {
             return _database.GetCollection<BsonDocument>(nombreColeccion);
         }
+        public IMongoCollection<T> ObtenerColeccion<T>(string nombreColeccion)
+        {
+            return _database.GetCollection<T>(nombreColeccion);
+        }
+
+        public async Task<(IEnumerable<TrampaModel> Trampas, long TotalRegistros, int TotalPaginas)> EncontrarTodasTrampasPaginado(int pagina = 1)
+        {
+            const int trampasPorPagina = 16;
+            IMongoCollection<TrampaModel> collection = ObtenerColeccion<TrampaModel>("Trampa");
+            
+            try
+            {
+                var totalRegistros = await collection.CountDocumentsAsync(_ => true);
+                var totalPaginas = (int)Math.Ceiling((double)totalRegistros / trampasPorPagina);
+                
+                var trampas = await collection.Find(_ => true)
+                    .Skip((pagina - 1) * trampasPorPagina)
+                    .Limit(trampasPorPagina)
+                    .ToListAsync();
+                    
+                return (trampas, totalRegistros, totalPaginas);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al obtener trampas: {ex.Message}");
+                return (new List<TrampaModel>(), 0, 0);
+            }
+        }
 
         #region VincularTrampa
         public async Task<TrampaModel> VincularTrampa(VincularTrampaDto vincularTrampaDto)

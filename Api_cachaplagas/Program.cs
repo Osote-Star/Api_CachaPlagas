@@ -35,9 +35,10 @@ namespace Api_cachaplagas
             {
                 options.AddPolicy("AllowFrontend", policy =>
                 {
-                    policy.WithOrigins()
+                    policy.WithOrigins("http://localhost:4200", "https://jgqvrw0w-5086.usw3.devtunnels.ms")
                     .AllowAnyHeader()
-                    .AllowAnyMethod();
+                    .AllowAnyMethod()
+                    .AllowCredentials();
                 });
             });
 
@@ -106,10 +107,12 @@ namespace Api_cachaplagas
     });
             });
 
+            
             builder.Services.AddControllers();
 
             var app = builder.Build();
 
+            app.UseCors("AllowFrontend"); // Aplicar la pol�tica CORS
             app.UseAuthentication(); // Habilitar autenticaci�n
             app.UseAuthorization();  // Habilitar autorizaci�n
 
