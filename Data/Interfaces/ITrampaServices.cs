@@ -25,6 +25,10 @@ namespace Data.Interfaces
         public Task<TrampasPaginasDto> GetTrampasUsuarioPaginado(UsuarioYPaginadoDto usuarioYPaginadoDto);
         public Task<IEnumerable<TrampaModel>> MostrarEstadisticaGeneral();
         public Task<IEnumerable<TrampaModel>> MostrarEstadisticaUsuario(int userId);
+        public Task<TrampaModel> MostrarEstadisticaModelo(string modelo);
+        public Task<int> GetTrampasCount();
+        public Task<TrampasPaginasDto> FilterByModel(ModeloYPaginadoDto modeloYPaginadoDto);
+        public Task<TrampaModel> EditarTrampa(EditarTrampaDto editarTrampaDto);
 
     }
 }

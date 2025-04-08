@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "M1c1BNhHOGFIJTgKv45O6TV/WWqnHkK1whEBKbxN+Ig=",
+  "Hash": "oqfxokzCIKnrySHl2wOgukw40LSS/z/V+FaRui97AJc=",
   "Source": "Api_cachaplagas",
   "BasePath": "_content/Api_cachaplagas",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
