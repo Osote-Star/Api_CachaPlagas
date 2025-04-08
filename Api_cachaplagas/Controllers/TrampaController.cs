@@ -65,33 +65,37 @@ namespace Api_cachaplagas.Controllers
             return Ok(trampa);
         }
 
-        // GET api/<TrampaController>/5
         [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("MostrarEstadistica/{TrampaID}")]
         public async Task<IActionResult> MostrarEstadistica(int TrampaID)
         {
-            TrampaModel task = await _services.MostrarEstadistica(TrampaID);
-            if (task == null) return NotFound();
-            return Ok(task);
+            var estadisticas = await _services.MostrarEstadistica(TrampaID);
+            if (estadisticas.CapturasPorDia.Count == 0)
+                return NotFound(new { message = "No se encontraron estadísticas para la trampa especificada." });
+
+            return Ok(estadisticas);
         }
 
-        // GET api/<TrampaController>/5
         [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("MostrarEstadisticaGeneral")]
         public async Task<IActionResult> MostrarEstadisticaGeneral()
         {
-            IEnumerable<TrampaModel> task = await _services.MostrarEstadisticaGeneral();
-            if (task.Count() == 0) return NotFound();
-            return Ok(task);
+            var estadisticas = await _services.MostrarEstadisticaGeneral();
+            if (estadisticas.CapturasPorDia.Count == 0)
+                return NotFound(new { message = "No se encontraron estadísticas generales." });
+
+            return Ok(estadisticas);
         }
 
         [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("MostrarEstadisticaUsuario/{userId}")]
         public async Task<IActionResult> MostrarEstadisticaUsuario(int userId)
         {
-            IEnumerable<TrampaModel> task = await _services.MostrarEstadisticaUsuario(userId);
-            if (task.Count() == 0) return NotFound();
-            return Ok(task);
+            var estadisticas = await _services.MostrarEstadisticaUsuario(userId);
+            if (estadisticas.CapturasPorDia.Count == 0)
+                return NotFound(new { message = "No se encontraron estadísticas para el usuario especificado." });
+
+            return Ok(estadisticas);
         }
 
         [Authorize(AuthenticationSchemes = "TokenUsuario,TokenTrampa")]

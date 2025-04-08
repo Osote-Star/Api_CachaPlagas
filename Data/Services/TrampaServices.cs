@@ -122,114 +122,282 @@ namespace Data.Services
         }
         #endregion
 
-        #region MostrarEstadistica
-        public async Task<TrampaModel> MostrarEstadistica(int TrampaId)
+        public async Task<EstadisticasCapturasDto> MostrarEstadistica(int trampaId)
         {
-            var collection = ObtenerColeccion("Trampa");
+            var capturasCollection = ObtenerColeccion("Captura");
+            var estadisticas = new EstadisticasCapturasDto();
+
             try
             {
-                // Pipeline optimizado
                 var pipeline = new[]
                 {
-                    new BsonDocument("$match", new BsonDocument("IDTrampa", TrampaId)),
-                    new BsonDocument("$lookup", new BsonDocument
+                    new BsonDocument("$match",
+                        new BsonDocument("IDTrampa", trampaId)),
+                    new BsonDocument("$sort",
+                        new BsonDocument("FechaCaptura", 1)),
+                    new BsonDocument("$project",
+                        new BsonDocument
+                        {
+                            { "FechaExacta", "$FechaCaptura" },
+                            { "Dia", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y-%m-%d" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Semana", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%G-Semana%V" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Mes", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y-%m" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Año", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            }
+                        })
+                };
+
+                var resultados = await capturasCollection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+
+                foreach (var resultado in resultados)
+                {
+                    var fechaExacta = resultado["FechaExacta"].ToUniversalTime();
+                    var dia = resultado["Dia"].AsString;
+                    var semana = resultado["Semana"].AsString;
+                    var mes = resultado["Mes"].AsString;
+                    var año = resultado["Año"].AsString;
+
+                    // Agregar la fecha exacta (con hora) a la lista de capturas por día
+                    if (!estadisticas.CapturasPorDia.ContainsKey(dia))
                     {
-                        { "from", "Captura" },
-                        { "localField", "IDTrampa" },
-                        { "foreignField", "IDTrampa" },
-                        { "as", "Capturas" }
-                    })
-                  };
+                        estadisticas.CapturasPorDia[dia] = new List<DateTime>();
+                    }
+                    estadisticas.CapturasPorDia[dia].Add(fechaExacta);
 
-                // Ejecutar pipeline y obtener el primer documento
-                var documentoUnido = await collection.Aggregate<BsonDocument>(pipeline).FirstOrDefaultAsync();
+                    // Mantener el conteo para semana, mes y año
+                    estadisticas.CapturasPorSemana[semana] = estadisticas.CapturasPorSemana.ContainsKey(semana) ?
+                        estadisticas.CapturasPorSemana[semana] + 1 : 1;
 
-                if (documentoUnido == null)
-                    return null;
+                    estadisticas.CapturasPorMes[mes] = estadisticas.CapturasPorMes.ContainsKey(mes) ?
+                        estadisticas.CapturasPorMes[mes] + 1 : 1;
 
-                // Deserializar directamente a TrampaModel
-                var trampa = BsonSerializer.Deserialize<TrampaModel>(documentoUnido);
+                    estadisticas.CapturasPorAño[año] = estadisticas.CapturasPorAño.ContainsKey(año) ?
+                        estadisticas.CapturasPorAño[año] + 1 : 1;
+                }
 
-                return trampa;
+                return estadisticas;
             }
             catch (Exception ex)
             {
-                return null;
+                Console.WriteLine($"Error en MostrarEstadistica: {ex.Message}");
+                return estadisticas;
             }
         }
-        #endregion
 
-        #region MostrarEstadisticaGenerales
-        public async Task<IEnumerable<TrampaModel>> MostrarEstadisticaGeneral()
+        public async Task<EstadisticasCapturasDto> MostrarEstadisticaGeneral()
         {
-            var collection = ObtenerColeccion("Trampa");
+            var capturasCollection = ObtenerColeccion("Captura");
+            var estadisticas = new EstadisticasCapturasDto();
+
             try
             {
-                // Pipeline optimizado
                 var pipeline = new[]
                 {
-                    new BsonDocument("$lookup", new BsonDocument
+                    new BsonDocument("$sort",
+                        new BsonDocument("FechaCaptura", 1)),
+                    new BsonDocument("$project",
+                        new BsonDocument
+                        {
+                            { "FechaExacta", "$FechaCaptura" },
+                            { "Dia", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y-%m-%d" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Semana", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%G-Semana%V" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Mes", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y-%m" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Año", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            }
+                        })
+                };
+
+                var resultados = await capturasCollection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+
+                foreach (var resultado in resultados)
+                {
+                    var fechaExacta = resultado["FechaExacta"].ToUniversalTime();
+                    var dia = resultado["Dia"].AsString;
+                    var semana = resultado["Semana"].AsString;
+                    var mes = resultado["Mes"].AsString;
+                    var año = resultado["Año"].AsString;
+
+                    // Agregar la fecha exacta (con hora) a la lista de capturas por día
+                    if (!estadisticas.CapturasPorDia.ContainsKey(dia))
                     {
-                        { "from", "Captura" },
-                        { "localField", "IDTrampa" },
-                        { "foreignField", "IDTrampa" },
-                        { "as", "Capturas" }
-                    })
-                  };
+                        estadisticas.CapturasPorDia[dia] = new List<DateTime>();
+                    }
+                    estadisticas.CapturasPorDia[dia].Add(fechaExacta);
 
-                // Ejecutar pipeline y obtener el primer documento
-                var documentosUnidos = await collection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+                    // Mantener el conteo para semana, mes y año
+                    estadisticas.CapturasPorSemana[semana] = estadisticas.CapturasPorSemana.ContainsKey(semana) ?
+                        estadisticas.CapturasPorSemana[semana] + 1 : 1;
 
-                if (documentosUnidos == null || !documentosUnidos.Any())
-                    return [];
+                    estadisticas.CapturasPorMes[mes] = estadisticas.CapturasPorMes.ContainsKey(mes) ?
+                        estadisticas.CapturasPorMes[mes] + 1 : 1;
 
-                // Deserializar la lista de documentos a IEnumerable<TrampaModel>
-                var trampas = documentosUnidos.Select(doc => BsonSerializer.Deserialize<TrampaModel>(doc));
+                    estadisticas.CapturasPorAño[año] = estadisticas.CapturasPorAño.ContainsKey(año) ?
+                        estadisticas.CapturasPorAño[año] + 1 : 1;
+                }
 
-                return trampas;
+                return estadisticas;
             }
             catch (Exception ex)
             {
-                return [];
+                Console.WriteLine($"Error en MostrarEstadisticaGeneral: {ex.Message}");
+                return estadisticas;
             }
         }
-        #endregion
-        #region MostrarEstadisticasUsuario
-        public async Task<IEnumerable<TrampaModel>> MostrarEstadisticaUsuario(int userId)
+
+        public async Task<EstadisticasCapturasDto> MostrarEstadisticaUsuario(int userId)
         {
-            var collection = ObtenerColeccion("Trampa");
+            var capturasCollection = ObtenerColeccion("Captura");
+            var trampasCollection = ObtenerColeccion("Trampa");
+            var estadisticas = new EstadisticasCapturasDto();
+
             try
             {
-                // Pipeline optimizado
+                var trampasUsuario = await trampasCollection
+                    .Find(Builders<BsonDocument>.Filter.Eq("IDUsuario", userId))
+                    .Project(Builders<BsonDocument>.Projection.Include("IDTrampa"))
+                    .ToListAsync();
+
+                if (trampasUsuario.Count == 0)
+                    return estadisticas;
+
+                var trampaIds = trampasUsuario.Select(t => t["IDTrampa"].AsInt32).ToList();
+
                 var pipeline = new[]
                 {
-                    new BsonDocument("$match", new BsonDocument("IDUsuario", userId)),
-                    new BsonDocument("$lookup", new BsonDocument
+                    new BsonDocument("$match",
+                        new BsonDocument("IDTrampa",
+                            new BsonDocument("$in", new BsonArray(trampaIds)))),
+                    new BsonDocument("$sort",
+                        new BsonDocument("FechaCaptura", 1)),
+                    new BsonDocument("$project",
+                        new BsonDocument
+                        {
+                            { "FechaExacta", "$FechaCaptura" },
+                            { "Dia", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y-%m-%d" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Semana", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%G-Semana%V" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Mes", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y-%m" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            },
+                            { "Año", new BsonDocument("$dateToString",
+                                new BsonDocument
+                                {
+                                    { "format", "%Y" },
+                                    { "date", "$FechaCaptura" },
+                                    { "timezone", "UTC" }
+                                })
+                            }
+                        })
+                };
+
+                var resultados = await capturasCollection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+
+                foreach (var resultado in resultados)
+                {
+                    var fechaExacta = resultado["FechaExacta"].ToUniversalTime();
+                    var dia = resultado["Dia"].AsString;
+                    var semana = resultado["Semana"].AsString;
+                    var mes = resultado["Mes"].AsString;
+                    var año = resultado["Año"].AsString;
+
+                    // Agregar la fecha exacta (con hora) a la lista de capturas por día
+                    if (!estadisticas.CapturasPorDia.ContainsKey(dia))
                     {
-                        { "from", "Captura" },
-                        { "localField", "IDTrampa" },
-                        { "foreignField", "IDTrampa" },
-                        { "as", "Capturas" }
-                    })
-                  };
+                        estadisticas.CapturasPorDia[dia] = new List<DateTime>();
+                    }
+                    estadisticas.CapturasPorDia[dia].Add(fechaExacta);
 
-                // Ejecutar pipeline y obtener el primer documento
-                var documentosUnidos = await collection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+                    // Mantener el conteo para semana, mes y año
+                    estadisticas.CapturasPorSemana[semana] = estadisticas.CapturasPorSemana.ContainsKey(semana) ?
+                        estadisticas.CapturasPorSemana[semana] + 1 : 1;
 
-                if (documentosUnidos == null || !documentosUnidos.Any())
-                    return [];
+                    estadisticas.CapturasPorMes[mes] = estadisticas.CapturasPorMes.ContainsKey(mes) ?
+                        estadisticas.CapturasPorMes[mes] + 1 : 1;
 
-                // Deserializar la lista de documentos a IEnumerable<TrampaModel>
-                var trampas = documentosUnidos.Select(doc => BsonSerializer.Deserialize<TrampaModel>(doc));
+                    estadisticas.CapturasPorAño[año] = estadisticas.CapturasPorAño.ContainsKey(año) ?
+                        estadisticas.CapturasPorAño[año] + 1 : 1;
+                }
 
-                return trampas;
+                return estadisticas;
             }
             catch (Exception ex)
             {
-                return [];
+                Console.WriteLine($"Error en MostrarEstadisticaUsuario: {ex.Message}");
+                return estadisticas;
             }
         }
-        #endregion
 
         #region CambiarStatusTrampa
         public async Task<TrampaModel> CambiarStatusTrampa(CambiarStatusDto cambiarStatusDto)

@@ -11,7 +11,6 @@ namespace Data.Interfaces
     public interface ITrampaServices
     {
         public Task<TrampaModel> VincularTrampa(VincularTrampaDto vincularTrampaDto);
-        public Task<TrampaModel> MostrarEstadistica(int TrampaId);
         public Task<TrampaModel> CambiarStatusTrampa(CambiarStatusDto cambiarStatusDto);
         public Task<TrampaModel> CambiarStatusSensor(EstatusSensorDto estatusSensor);
         public Task<TrampaModel> CambiarEstatusPuerta(EstatusPuertaDto estatusPuertaDto);
@@ -23,8 +22,11 @@ namespace Data.Interfaces
         public Task<bool?> ObtenerEstatusPuerta(int trampaID);
         public Task<TrampasPaginasDto> EncontrarTodasTrampasPaginado(int pagina = 1);
         public Task<TrampasPaginasDto> GetTrampasUsuarioPaginado(UsuarioYPaginadoDto usuarioYPaginadoDto);
-        public Task<IEnumerable<TrampaModel>> MostrarEstadisticaGeneral();
-        public Task<IEnumerable<TrampaModel>> MostrarEstadisticaUsuario(int userId);
+
+        // Métodos de estadísticas actualizados
+        Task<EstadisticasCapturasDto> MostrarEstadistica(int trampaId);
+        Task<EstadisticasCapturasDto> MostrarEstadisticaGeneral();
+        Task<EstadisticasCapturasDto> MostrarEstadisticaUsuario(int userId);
 
     }
 }

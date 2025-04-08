@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj": {}
+    "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj": {
+    "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
         "projectName": "Api_cachaplagas",
-        "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
-        "packagesPath": "C:\\Users\\dsono\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\obj\\",
+        "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Api_cachaplagas\\Api_cachaplagas.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Api_cachaplagas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dsono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,14 +33,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Data.csproj"
+              "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Data\\Data.csproj"
               },
-              "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\DTOs.csproj"
+              "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj"
+              "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj"
               }
             }
           }
@@ -54,7 +54,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -92,24 +93,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Data.csproj": {
+    "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\dsono\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\obj\\",
+        "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dsono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -125,11 +126,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\DTOs.csproj"
+              "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj"
+              "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj"
               }
             }
           }
@@ -143,7 +144,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -178,24 +180,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
+    "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\DTOs.csproj",
-        "packagesPath": "C:\\Users\\dsono\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\obj\\",
+        "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\DTOs\\DTOs.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dsono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -211,8 +213,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj"
+              "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj"
               }
             }
           }
@@ -226,7 +228,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -253,24 +256,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj": {
+    "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\dsono\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\obj\\",
+        "projectPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marti\\Desktop\\definitivo\\Api_CachaPlagas\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dsono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -297,7 +300,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -324,7 +328,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

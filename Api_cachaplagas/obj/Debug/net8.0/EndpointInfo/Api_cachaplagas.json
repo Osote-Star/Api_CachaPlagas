@@ -736,22 +736,9 @@
             "type": "integer",
             "format": "int32"
           },
-          "imagen": {
-            "type": "string",
-            "nullable": true
-          },
           "modelo": {
             "type": "string",
             "nullable": true
-          },
-          "estatusTrampa": {
-            "type": "boolean"
-          },
-          "estatusPuerta": {
-            "type": "boolean"
-          },
-          "estatusSensor": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false
