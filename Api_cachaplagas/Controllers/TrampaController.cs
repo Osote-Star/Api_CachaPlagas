@@ -99,7 +99,7 @@ namespace Api_cachaplagas.Controllers
         [HttpGet("MostrarEstadistica/{TrampaID}")]
         public async Task<IActionResult> MostrarEstadistica(int TrampaID)
         {
-            TrampaModel task = await _services.MostrarEstadistica(TrampaID);
+            var task = await _services.MostrarEstadistica(TrampaID);
             if (task == null) return NotFound();
             return Ok(task);
         }

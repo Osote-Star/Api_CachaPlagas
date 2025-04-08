@@ -279,6 +279,37 @@
         }
       }
     },
+    "/api/Trampa/EditarTrampa": {
+      "post": {
+        "tags": [
+          "Trampa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarTrampaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarTrampaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarTrampaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Trampa/Buscar-trampa/{trampaID}": {
       "get": {
         "tags": [
@@ -319,6 +350,49 @@
         }
       }
     },
+    "/api/Trampa/FiltrarPorModelo": {
+      "post": {
+        "tags": [
+          "Trampa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModeloYPaginadoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModeloYPaginadoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModeloYPaginadoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/MostrarConteoTrampas": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Trampa/MostrarEstadistica/{TrampaID}": {
       "get": {
         "tags": [
@@ -332,6 +406,28 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Trampa/MostrarEstadisticaModelo/{modelo}": {
+      "get": {
+        "tags": [
+          "Trampa"
+        ],
+        "parameters": [
+          {
+            "name": "modelo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -833,6 +929,20 @@
         },
         "additionalProperties": false
       },
+      "EditarTrampaDto": {
+        "type": "object",
+        "properties": {
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTrampa": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "EmailDto": {
         "type": "object",
         "properties": {
@@ -887,6 +997,20 @@
         },
         "additionalProperties": false
       },
+      "ModeloYPaginadoDto": {
+        "type": "object",
+        "properties": {
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "pagina": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "TokenDto": {
         "type": "object",
         "properties": {
@@ -916,10 +1040,6 @@
           "idUsuario": {
             "type": "integer",
             "format": "int32",
-            "nullable": true
-          },
-          "imagen": {
-            "type": "string",
             "nullable": true
           },
           "modelo": {

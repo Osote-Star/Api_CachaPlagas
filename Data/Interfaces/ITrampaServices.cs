@@ -22,8 +22,9 @@ namespace Data.Interfaces
         public Task<bool?> ObtenerEstatusPuerta(int trampaID);
         public Task<TrampasPaginasDto> EncontrarTodasTrampasPaginado(int pagina = 1);
         public Task<TrampasPaginasDto> GetTrampasUsuarioPaginado(UsuarioYPaginadoDto usuarioYPaginadoDto);
-        public Task<IEnumerable<TrampaModel>> MostrarEstadisticaGeneral();
-        public Task<IEnumerable<TrampaModel>> MostrarEstadisticaUsuario(int userId);
+        public Task<EstadisticasCapturasDto> MostrarEstadisticaGeneral();
+        public Task<EstadisticasCapturasDto> MostrarEstadistica(int trampaId);
+        public Task<EstadisticasCapturasDto> MostrarEstadisticaUsuario(int userId);
         public Task<TrampaModel> MostrarEstadisticaModelo(string modelo);
         public Task<int> GetTrampasCount();
         public Task<TrampasPaginasDto> FilterByModel(ModeloYPaginadoDto modeloYPaginadoDto);

@@ -239,6 +239,38 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "EditarTrampa",
+    "RelativePath": "api/Trampa/EditarTrampa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "editarTrampaDto",
+        "Type": "DTOs.TrampaDto.EditarTrampaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "FilterByModel",
+    "RelativePath": "api/Trampa/FiltrarPorModelo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modeloYPaginadoDto",
+        "Type": "DTOs.TrampaDto.ModeloYPaginadoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
     "Method": "EncontrarTodasTrampas",
     "RelativePath": "api/Trampa/GetAllTrampas/{pagina}",
     "HttpMethod": "GET",
@@ -271,6 +303,16 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "GetTrampasCount",
+    "RelativePath": "api/Trampa/MostrarConteoTrampas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
     "Method": "MostrarEstadistica",
     "RelativePath": "api/Trampa/MostrarEstadistica/{TrampaID}",
     "HttpMethod": "GET",
@@ -293,6 +335,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "MostrarEstadisticaModelo",
+    "RelativePath": "api/Trampa/MostrarEstadisticaModelo/{modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

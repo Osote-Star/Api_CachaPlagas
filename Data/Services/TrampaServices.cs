@@ -279,6 +279,7 @@ namespace Data.Services
             }
         }
 
+
         public async Task<EstadisticasCapturasDto> MostrarEstadisticaGeneral()
         {
             var capturasCollection = ObtenerColeccion("Captura");
@@ -466,7 +467,7 @@ namespace Data.Services
                 return estadisticas;
             }
         }
-        #endregion
+        
 
         #region MostrarEstadisticaModelo
         public async Task<TrampaModel> MostrarEstadisticaModelo(string modelo)
