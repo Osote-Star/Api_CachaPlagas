@@ -36,6 +36,37 @@ namespace Data.Services
         {
             return _database.GetCollection<T>(nombreColeccion);
         }
+
+        #region Editarrampa
+        public async Task<TrampaModel> EditarTrampa(EditarTrampaDto editarTrampaDto)
+        {
+            // Get the collection
+            var collection = ObtenerColeccion<TrampaModel>("Trampa");
+
+            // Define the filter to find the trap by IDTrampa
+            var filter = Builders<TrampaModel>.Filter.Eq(t => t.IDTrampa, editarTrampaDto.IDTrampa);
+
+            // Define the update (only updating the Modelo field)
+            var update = Builders<TrampaModel>.Update
+                .Set(t => t.Modelo, editarTrampaDto.Modelo);
+
+            // Execute the update operation and get the updated document
+            var options = new FindOneAndUpdateOptions<TrampaModel>
+            {
+                ReturnDocument = ReturnDocument.After // Returns the updated document
+            };
+
+            var updatedTrampa = await collection.FindOneAndUpdateAsync(filter, update, options);
+
+            if (updatedTrampa == null)
+            {
+                throw new Exception($"No se encontró una trampa con IDTrampa: {editarTrampaDto.IDTrampa}");
+            }
+
+            return updatedTrampa;
+        }
+        #endregion
+
         public async Task<TrampasPaginasDto> GetTrampasUsuarioPaginado(UsuarioYPaginadoDto usuarioYPaginadoDto)
         {
             const int trampasPorPagina = 16;
@@ -86,6 +117,43 @@ namespace Data.Services
             {
                 Console.WriteLine($"Error al obtener trampas: {ex.Message}");
                 return new TrampasPaginasDto([], 0, 0);
+            }
+        }
+
+        public async Task<TrampasPaginasDto> FilterByModel(ModeloYPaginadoDto modeloYPaginadoDto)
+        {
+            const int trampasPorPagina = 16;
+            IMongoCollection<TrampaModel> collection = ObtenerColeccion<TrampaModel>("Trampa");
+            try
+            {
+                var filtro = Builders<TrampaModel>.Filter.Regex("Modelo", new BsonRegularExpression(new Regex(modeloYPaginadoDto.Modelo, RegexOptions.IgnoreCase)));
+                var totalRegistros = await collection.CountDocumentsAsync(filtro);
+                var totalPaginas = (int)Math.Ceiling((double)totalRegistros / trampasPorPagina);
+                var trampas = await collection.Find(filtro)
+                    .Skip((modeloYPaginadoDto.Pagina - 1) * trampasPorPagina)
+                    .Limit(trampasPorPagina)
+                    .ToListAsync();
+                return new TrampasPaginasDto(trampas: trampas, totalRegistros: totalRegistros, totalPaginas: totalPaginas);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al filtrar por modelo: {ex.Message}");
+                return new TrampasPaginasDto([], 0, 0);
+            }
+        }
+
+        public async Task<int> GetTrampasCount()
+        {
+            IMongoCollection<TrampaModel> collection = ObtenerColeccion<TrampaModel>("Trampa");
+            try
+            {
+                var totalRegistros = await collection.CountDocumentsAsync(_ => true);
+                return (int)totalRegistros;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al contar trampas: {ex.Message}");
+                return 0;
             }
         }
 
@@ -398,6 +466,63 @@ namespace Data.Services
                 return estadisticas;
             }
         }
+        #endregion
+
+        #region MostrarEstadisticaModelo
+        public async Task<TrampaModel> MostrarEstadisticaModelo(string modelo)
+        {
+            var collection = ObtenerColeccion("Trampa");
+            try
+            {
+                // Pipeline optimizado
+                var pipeline = new[]
+                {
+                    new BsonDocument("$match", new BsonDocument("Modelo", modelo)),
+                    new BsonDocument("$lookup", new BsonDocument
+                    {
+                        { "from", "Captura" },
+                        { "localField", "IDTrampa" },
+                        { "foreignField", "IDTrampa" },
+                        { "as", "Capturas" }
+                    })
+                };
+
+                // Ejecutar pipeline y obtener todos los documentos
+                var documentosUnidos = await collection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+
+                if (documentosUnidos == null || !documentosUnidos.Any())
+                    return null;
+
+                // Deserializar todos los documentos a TrampaModel
+                var trampas = documentosUnidos.Select(doc => BsonSerializer.Deserialize<TrampaModel>(doc)).ToList();
+
+                // Crear un único modelo de trampa que contenga todas las capturas
+                var trampaConsolidada = new TrampaModel
+                {
+                    // Copiar propiedades comunes (asumiendo que todas las trampas del mismo modelo comparten estas propiedades)
+                    _Id = "0",
+                    IDTrampa = 0,
+                    IDUsuario = 0,
+                    Modelo = trampas.First().Modelo,
+                    Localizacion = "",
+                    EstatusPuerta = false,
+                    EstatusSensor = false,
+                    EstatusTrampa = true,
+                    // ... otras propiedades que quieras copiar
+
+                    // Consolidar todas las capturas
+                    Capturas = trampas.SelectMany(t => t.Capturas ?? new List<CapturaModel>()).ToList()
+                };
+
+                return trampaConsolidada;
+            }
+            catch (Exception ex)
+            {
+                // Considera registrar el error aquí
+                return null;
+            }
+        }
+        #endregion
 
         #region CambiarStatusTrampa
         public async Task<TrampaModel> CambiarStatusTrampa(CambiarStatusDto cambiarStatusDto)

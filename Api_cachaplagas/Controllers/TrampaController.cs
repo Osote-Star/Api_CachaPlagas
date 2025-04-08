@@ -52,6 +52,17 @@ namespace Api_cachaplagas.Controllers
             return Ok(trampas);
         }
 
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpPost("EditarTrampa")]
+        public async Task<IActionResult> EditarTrampa([FromBody] EditarTrampaDto editarTrampaDto)
+        {
+            var trampas = await _services.EditarTrampa(editarTrampaDto);
+            if (trampas == null)
+                return NotFound();
+
+            return Ok(trampas);
+        }
+
         // GET api/<TrampaController>/5
         [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("Buscar-trampa/{trampaID}")]
@@ -66,14 +77,40 @@ namespace Api_cachaplagas.Controllers
         }
 
         [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpPost("FiltrarPorModelo")]
+        public async Task<IActionResult> FilterByModel([FromBody] ModeloYPaginadoDto modeloYPaginadoDto)
+        {
+            var trampas = await _services.FilterByModel(modeloYPaginadoDto);
+            if (trampas.TotalRegistros == 0)
+                return NotFound(new { message = "Trampa no encontrada o sin cambios" });
+            return Ok(trampas);
+        }
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpGet("MostrarConteoTrampas")]
+        public async Task<IActionResult> GetTrampasCount()
+        {
+            int task = await _services.GetTrampasCount();
+            if (task == 0) return NotFound();
+            return Ok(task);
+        }
+
+        // GET api/<TrampaController>/5
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
         [HttpGet("MostrarEstadistica/{TrampaID}")]
         public async Task<IActionResult> MostrarEstadistica(int TrampaID)
         {
-            var estadisticas = await _services.MostrarEstadistica(TrampaID);
-            if (estadisticas.CapturasPorDia.Count == 0)
-                return NotFound(new { message = "No se encontraron estadísticas para la trampa especificada." });
+            TrampaModel task = await _services.MostrarEstadistica(TrampaID);
+            if (task == null) return NotFound();
+            return Ok(task);
+        }
 
-            return Ok(estadisticas);
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpGet("MostrarEstadisticaModelo/{modelo}")]
+        public async Task<IActionResult> MostrarEstadisticaModelo(string modelo)
+        {
+            TrampaModel task = await _services.MostrarEstadisticaModelo(modelo);
+            if (task == null) return NotFound();
+            return Ok(task);
         }
 
         [Authorize(AuthenticationSchemes = "TokenUsuario")]

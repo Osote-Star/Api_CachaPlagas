@@ -18,8 +18,6 @@ namespace Models
         public int? IDTrampa { get; set; }
         [BsonElement("IDUsuario")]
         public int? IDUsuario { get; set; }
-        [BsonElement("Imagen")]
-        public string? Imagen { get; set; }
         [BsonElement("Modelo")]
         public string? Modelo { get; set; }
         [BsonElement("Localizacion")]
