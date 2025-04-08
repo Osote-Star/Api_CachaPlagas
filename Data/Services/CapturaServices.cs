@@ -1,6 +1,8 @@
 ﻿using Data.Interfaces;
+using DTOs.CapturaDto;
 using Models;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -26,6 +28,30 @@ namespace Data.Services
         {
             return _database.GetCollection<TrampaModel>(nombreColeccion);
         }
+
+        public async Task<List<CapturaDto>> ObtenerCapturasPorUsuario(int usuarioId)
+        {
+            IMongoCollection<CapturaModel> collection = ObtenerColeccion<CapturaModel>("Captura");
+
+            // Buscar las capturas asociadas al usuario con el ID proporcionado
+            var capturas = await collection
+                .Find(c => c.IDTrampa == usuarioId) // Aquí se asume que IDTrampa está relacionado con el usuario
+                .Sort(Builders<CapturaModel>.Sort.Descending(c => c.FechaCaptura)) // Ordenar por fecha de captura, más reciente primero
+                .ToListAsync();
+
+            // Convertir las capturas a DTOs para la respuesta
+            var capturasDto = capturas.Select(c => new CapturaDto
+            {
+                IDCaptura = c.IDCaptura,
+                IDTrampa = c.IDTrampa,
+                Animal = c.Animal,
+                FechaCaptura = c.FechaCaptura
+            }).ToList();
+
+            return capturasDto;
+        }
+
+
 
         //Metodo para ObtenerProximoId
         public async Task<int> ObtenerProximoIdcaptura()

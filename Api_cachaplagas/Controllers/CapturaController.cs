@@ -1,4 +1,6 @@
 using Data.Interfaces;
+using Data.Services;
+using DTOs.CapturaDto;
 using DTOs.Usuarios;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -29,6 +31,19 @@ namespace Api_cachaplagas.Controllers
             return Ok(captura);
         }
 
-        
+        [HttpGet("ObtenerCapturas/{usuarioId}")]
+        [Authorize(AuthenticationSchemes = "TokenUsuario,TokenTrampa")]
+        public async Task<ActionResult<List<CapturaDto>>> ObtenerCapturasPorUsuario(int usuarioId)
+        {
+            var capturas = await _services.ObtenerCapturasPorUsuario(usuarioId);
+            if (capturas == null || !capturas.Any())
+            {
+                return NotFound("No se encontraron capturas para este usuario.");
+            }
+
+            return Ok(capturas);
+        }
+
+
     }
 }

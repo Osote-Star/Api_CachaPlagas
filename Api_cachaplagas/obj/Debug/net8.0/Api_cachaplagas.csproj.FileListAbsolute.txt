@@ -138,7 +138,6 @@ C:\Users\dsono\OneDrive\Documentos\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net
 C:\Users\dsono\OneDrive\Documentos\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.AssemblyInfoInputs.cache
 C:\Users\dsono\OneDrive\Documentos\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.AssemblyInfo.cs
 C:\Users\dsono\OneDrive\Documentos\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.csproj.CoreCompileInputs.cache
-C:\Users\dsono\OneDrive\Documentos\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\dsono\OneDrive\Documentos\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dsono\OneDrive\Documentos\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\Api_cachaplagas.sourcelink.json
 C:\Users\dsono\OneDrive\Documentos\Api_CachaPlagas\Api_cachaplagas\obj\Debug\net8.0\staticwebassets.build.json

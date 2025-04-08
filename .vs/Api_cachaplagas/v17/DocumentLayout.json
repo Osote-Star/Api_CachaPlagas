@@ -1,21 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\",
+  "WorkspaceRootPath": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\services\\capturaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\capturaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\services\\serviceemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\serviceemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\api_cachaplagas\\controllers\\capturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\capturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C20C706E-8A78-4D10-8DE2-15E4F213F272}|Api_cachaplagas\\Api_cachaplagas.csproj|solutionrelative:api_cachaplagas\\controllers\\trampacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\interfaces\\icapturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\icapturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\dtos\\capturadto\\capturadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\capturadto\\capturadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\models\\capturamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\capturamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\models\\enviarcorreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\enviarcorreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\models\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\trampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\usuariosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\trampamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4832DF1E-2E72-421B-B3F2-32C37D6A2111}|Models\\Models.csproj|solutionrelative:models\\usuariosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\interfaces\\iservicioemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\iservicioemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\itrampaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\5tocuatri\\integrador\\api_cachaplagas\\dtos\\trampadto\\usuarioypaginadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\dtos\\trampadto\\agregartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\trampadto\\agregartrampadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\dtos\\trampadto\\estatuspuertadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\trampadto\\estatuspuertadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\dtos\\trampadto\\editarlocalizaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\trampadto\\editarlocalizaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\data\\mongoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2DA9F1-9D48-4045-BC49-BE33D27EC3C6}|Data\\Data.csproj|solutionrelative:data\\mongoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|c:\\users\\dsono\\onedrive\\documentos\\api_cachaplagas\\dtos\\trampadto\\usuarioypaginadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{733E96EC-B10E-45B0-8E9B-C17A3DEF9D92}|DTOs\\DTOs.csproj|solutionrelative:dtos\\trampadto\\usuarioypaginadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,59 +94,285 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ITrampaServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
-              "RelativeDocumentMoniker": "Data\\Interfaces\\ITrampaServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
-              "RelativeToolTip": "Data\\Interfaces\\ITrampaServices.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T08:29:13.018Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1323641800:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TrampaServices.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
-              "RelativeDocumentMoniker": "Data\\Services\\TrampaServices.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
-              "RelativeToolTip": "Data\\Services\\TrampaServices.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAcwHYAAAAAAAAAAAAAAA==",
+              "Title": "CapturaServices.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\CapturaServices.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\CapturaServices.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\CapturaServices.cs",
+              "RelativeToolTip": "Data\\Services\\CapturaServices.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAcwC4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T08:24:53.712Z",
+              "WhenOpened": "2025-04-08T06:13:14.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioYPaginadoDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\DTOs\\TrampaDto\\UsuarioYPaginadoDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\TrampaDto\\UsuarioYPaginadoDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\DTOs\\TrampaDto\\UsuarioYPaginadoDto.cs",
-              "RelativeToolTip": "DTOs\\TrampaDto\\UsuarioYPaginadoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "TrampaServices.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\TrampaServices.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\TrampaServices.cs",
+              "RelativeToolTip": "Data\\Services\\TrampaServices.cs",
+              "ViewState": "AQIAAAYBAAAAAAAAAAAcwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T08:24:19.384Z",
+              "WhenOpened": "2025-04-07T08:24:53.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnviarCorreo.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\EnviarCorreo.cs",
+              "RelativeDocumentMoniker": "Models\\EnviarCorreo.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\EnviarCorreo.cs",
+              "RelativeToolTip": "Models\\EnviarCorreo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:15:15.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CapturaModel.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\CapturaModel.cs",
+              "RelativeDocumentMoniker": "Models\\CapturaModel.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\CapturaModel.cs",
+              "RelativeToolTip": "Models\\CapturaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:14:39.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CapturaDto.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\CapturaDto\\CapturaDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CapturaDto\\CapturaDto.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\CapturaDto\\CapturaDto.cs",
+              "RelativeToolTip": "DTOs\\CapturaDto\\CapturaDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:15:46.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICapturaService.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Interfaces\\ICapturaService.cs",
+              "RelativeDocumentMoniker": "Data\\Interfaces\\ICapturaService.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Interfaces\\ICapturaService.cs",
+              "RelativeToolTip": "Data\\Interfaces\\ICapturaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:29:37.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RefreshTokenModel.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\RefreshTokenModel.cs",
+              "RelativeDocumentMoniker": "Models\\RefreshTokenModel.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\RefreshTokenModel.cs",
+              "RelativeToolTip": "Models\\RefreshTokenModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T07:00:39.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CapturaController.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\CapturaController.cs",
+              "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\CapturaController.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\CapturaController.cs",
+              "RelativeToolTip": "Api_cachaplagas\\Controllers\\CapturaController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAhwCEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:23:11.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ServiceEMail.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\ServiceEMail.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\ServiceEMail.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\ServiceEMail.cs",
+              "RelativeToolTip": "Data\\Services\\ServiceEMail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:57:55.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TrampaController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
               "RelativeDocumentMoniker": "Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\5toCuatri\\INTEGRADOR\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Api_cachaplagas\\Controllers\\TrampaController.cs",
               "RelativeToolTip": "Api_cachaplagas\\Controllers\\TrampaController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAmwGQAAAAvAAAAAAAAAA==",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAUwLMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T08:19:55.421Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TrampaModel.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\TrampaModel.cs",
+              "RelativeDocumentMoniker": "Models\\TrampaModel.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\TrampaModel.cs",
+              "RelativeToolTip": "Models\\TrampaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:17:31.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuariosModel.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
+              "RelativeDocumentMoniker": "Models\\UsuariosModel.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Models\\UsuariosModel.cs",
+              "RelativeToolTip": "Models\\UsuariosModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAvwCEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:57:14.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsuariosServices.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\UsuariosServices.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\UsuariosServices.cs",
+              "RelativeToolTip": "Data\\Services\\UsuariosServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T07:00:30.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IservicioEmail.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Interfaces\\IservicioEmail.cs",
+              "RelativeDocumentMoniker": "Data\\Interfaces\\IservicioEmail.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Interfaces\\IservicioEmail.cs",
+              "RelativeToolTip": "Data\\Interfaces\\IservicioEmail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:30:18.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ITrampaServices.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
+              "RelativeDocumentMoniker": "Data\\Interfaces\\ITrampaServices.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Interfaces\\ITrampaServices.cs",
+              "RelativeToolTip": "Data\\Interfaces\\ITrampaServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T08:29:13.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AgregarTrampaDto.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\TrampaDto\\AgregarTrampaDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\TrampaDto\\AgregarTrampaDto.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\TrampaDto\\AgregarTrampaDto.cs",
+              "RelativeToolTip": "DTOs\\TrampaDto\\AgregarTrampaDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:17:56.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EstatusPuertaDto.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\TrampaDto\\EstatusPuertaDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\TrampaDto\\EstatusPuertaDto.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\TrampaDto\\EstatusPuertaDto.cs",
+              "RelativeToolTip": "DTOs\\TrampaDto\\EstatusPuertaDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:17:55.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EditarLocalizacionDto.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\TrampaDto\\EditarLocalizacionDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\TrampaDto\\EditarLocalizacionDto.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\TrampaDto\\EditarLocalizacionDto.cs",
+              "RelativeToolTip": "DTOs\\TrampaDto\\EditarLocalizacionDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:17:55.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\AuthServices.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\Services\\AuthServices.cs",
+              "RelativeToolTip": "Data\\Services\\AuthServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:13:12.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MongoConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\MongoConfiguration.cs",
+              "RelativeDocumentMoniker": "Data\\MongoConfiguration.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\Data\\MongoConfiguration.cs",
+              "RelativeToolTip": "Data\\MongoConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T06:13:07.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UsuarioYPaginadoDto.cs",
+              "DocumentMoniker": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\TrampaDto\\UsuarioYPaginadoDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\TrampaDto\\UsuarioYPaginadoDto.cs",
+              "ToolTip": "C:\\Users\\dsono\\OneDrive\\Documentos\\Api_CachaPlagas\\DTOs\\TrampaDto\\UsuarioYPaginadoDto.cs",
+              "RelativeToolTip": "DTOs\\TrampaDto\\UsuarioYPaginadoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T08:24:19.384Z"
             }
           ]
         }
