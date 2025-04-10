@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Api_cachaplagas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18813136a932d57d732a3dde443d70030d73a5e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b53d2ec22da40ec2773fae6f1b2569bbf58a7199")]
 [assembly: System.Reflection.AssemblyProductAttribute("Api_cachaplagas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Api_cachaplagas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

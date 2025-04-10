@@ -784,5 +784,75 @@ namespace Data.Services
             }
         }
         #endregion
+
+        // Esto va en la API (C#)
+        // Esto va en la API (C#)
+        public async Task<EstadisticasMensualesDto> MostrarEstadisticaUsuarioPorMes(int userId)
+        {
+            var capturasCollection = ObtenerColeccion("Captura");
+            var trampasCollection = ObtenerColeccion("Trampa");
+            var estadisticas = new EstadisticasMensualesDto { Año = 0 }; // Año = 0 indica "todos los años"
+
+            try
+            {
+                Console.WriteLine($"Iniciando búsqueda para userId: {userId}");
+                var trampasUsuario = await trampasCollection
+                    .Find(Builders<BsonDocument>.Filter.Eq("IDUsuario", userId))
+                    .Project(Builders<BsonDocument>.Projection.Include("IDTrampa"))
+                    .ToListAsync();
+
+                if (trampasUsuario.Count == 0)
+                {
+                    Console.WriteLine($"No se encontraron trampas para userId: {userId}");
+                    return estadisticas;
+                }
+
+                var trampaIds = trampasUsuario.Select(t => t["IDTrampa"].AsInt32).ToList();
+                Console.WriteLine($"TrampaIds encontradas: {string.Join(", ", trampaIds)}");
+
+                // Solo filtramos por IDTrampa, sin restricción de fecha
+                var matchStage = new BsonDocument("$match",
+                    new BsonDocument
+                    {
+                { "IDTrampa", new BsonDocument("$in", new BsonArray(trampaIds)) }
+                    });
+
+                var pipeline = new[]
+                {
+            matchStage,
+            new BsonDocument("$group",
+                new BsonDocument
+                {
+                    { "_id", new BsonDocument("$dateToString",
+                        new BsonDocument
+                        {
+                            { "format", "%m" }, // Solo el mes
+                            { "date", "$FechaCaptura" },
+                            { "timezone", "UTC" }
+                        }) },
+                    { "count", new BsonDocument("$sum", 1) }
+                }),
+            new BsonDocument("$sort", new BsonDocument("_id", 1))
+        };
+
+                var resultados = await capturasCollection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+                Console.WriteLine($"Resultados encontrados: {resultados.Count}");
+
+                foreach (var resultado in resultados)
+                {
+                    int mes = int.Parse(resultado["_id"].AsString) - 1; // Meses de 0 a 11
+                    estadisticas.CapturasPorMes[mes] = resultado["count"].AsInt32;
+                    Console.WriteLine($"Mes {mes + 1}: {estadisticas.CapturasPorMes[mes]} capturas");
+                }
+
+                return estadisticas;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en MostrarEstadisticaUsuarioPorMes: {ex.Message}");
+                return estadisticas; // Devuelve array vacío en caso de error
+            }
+        }
+
     }
 }

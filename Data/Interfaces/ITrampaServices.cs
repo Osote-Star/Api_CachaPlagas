@@ -30,5 +30,7 @@ namespace Data.Interfaces
         public Task<TrampasPaginasDto> FilterByModel(ModeloYPaginadoDto modeloYPaginadoDto);
         public Task<TrampaModel> EditarTrampa(EditarTrampaDto editarTrampaDto);
 
+        public Task<EstadisticasMensualesDto> MostrarEstadisticaUsuarioPorMes(int userId); 
+
     }
 }

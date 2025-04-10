@@ -36,7 +36,7 @@ namespace Api_cachaplagas
             {
                 options.AddPolicy("AllowFrontend", policy =>
                 {
-                    policy.WithOrigins("http://localhost:4200", "https://jgqvrw0w-5086.usw3.devtunnels.ms")
+                    policy.WithOrigins("http://localhost:4200", "https://6tcsdl1g-5086.usw3.devtunnels.ms") 
                     .AllowAnyHeader()
                     .AllowAnyMethod()
                     .AllowCredentials();

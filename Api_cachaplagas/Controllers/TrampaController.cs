@@ -135,6 +135,31 @@ namespace Api_cachaplagas.Controllers
             return Ok(estadisticas);
         }
 
+        // Esto va en la API (C#)
+
+        [Authorize(AuthenticationSchemes = "TokenUsuario")]
+        [HttpGet("MostrarEstadisticaUsuarioPorMes/{userId}")]
+        public async Task<IActionResult> MostrarEstadisticaUsuarioPorMes([FromRoute] int userId)
+        {
+            Console.WriteLine($"UserId recibido en el controlador: {userId}");
+            try
+            {
+                var estadisticas = await _services.MostrarEstadisticaUsuarioPorMes(userId);
+                if (estadisticas.CapturasPorMes.All(count => count == 0))
+                {
+                    Console.WriteLine("No se encontraron capturas para este usuario.");
+                    return NotFound(new { message = "No se encontraron estadísticas para el usuario." });
+                }
+
+                return Ok(estadisticas);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en el controlador: {ex.Message}");
+                return StatusCode(500, new { message = "Error interno al procesar las estadísticas.", error = ex.Message });
+            }
+        }
+
         [Authorize(AuthenticationSchemes = "TokenUsuario,TokenTrampa")]
         [HttpGet("ObtenerEstatusSensor/{trampaID}")]
         public async Task<IActionResult> GetEstatusSensor(int trampaID)

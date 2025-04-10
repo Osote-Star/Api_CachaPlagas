@@ -371,6 +371,22 @@
   },
   {
     "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
+    "Method": "MostrarEstadisticaUsuarioPorMes",
+    "RelativePath": "api/Trampa/MostrarEstadisticaUsuarioPorMes/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_cachaplagas.Controllers.TrampaController",
     "Method": "GetEstatusPuerta",
     "RelativePath": "api/Trampa/ObtenerEstatusPuerta/{trampaID}",
     "HttpMethod": "GET",
